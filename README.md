@@ -215,10 +215,9 @@ sigma_protocol/
 
 ---
 
-## Preprints
+## Research Manuscripts
 
-- **Epsilon-Gate:** [DOI 10.20944/preprints202501.1982.v1](https://doi.org/10.20944/preprints202501.1982.v1)
-- **Cancer-Gate:** preprint in preparation
+Full manuscripts for Epsilon-Gate and Cancer-Gate are available in the [`/preprints`](./preprints) directory.
 
 ---
 
