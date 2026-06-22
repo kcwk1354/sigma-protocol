@@ -1,0 +1,563 @@
+[
+  {
+    "candidate": {
+      "id": "CG1-001",
+      "smiles": "OC(=O)C1CCN(Cc2ccc(F)cc2)CC1",
+      "name": "1-(4-fluorobenzyl)piperidine-4-carboxylic acid",
+      "scaffold": "Piperidine-4-COOH + 4-F-benzyl",
+      "adc_handle": "COOH",
+      "rationale": "VU0155041형 PAM pharmacophore: F-benzyl TM3/5 소수성 포켓 / piperidine sp3 풍부화"
+    },
+    "rdkit": {
+      "mw": 237.27,
+      "logp": 2.122,
+      "qed": 0.875,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1209,
+      "ames": 0.0182,
+      "dili": 0.0992,
+      "hia": 0.9909,
+      "hia_corrected": 1.0,
+      "bbb": 0.8643,
+      "cyp3a4": 0.2316,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.099 < 0.4": true,
+        "hERG 0.121 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG1-001",
+      "best_dG": -5.819,
+      "best_Ki_uM": 53.9582,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.819,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.743,
+          "rmsd_lb": 12.43,
+          "rmsd_ub": 13.2
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.422,
+          "rmsd_lb": 13.15,
+          "rmsd_ub": 16.03
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.421,
+          "rmsd_lb": 4.223,
+          "rmsd_ub": 6.575
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.349,
+          "rmsd_lb": 12.17,
+          "rmsd_ub": 13.16
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.345,
+          "rmsd_lb": 13.64,
+          "rmsd_ub": 14.72
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.268,
+          "rmsd_lb": 13.59,
+          "rmsd_ub": 16.29
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.108,
+          "rmsd_lb": 15.38,
+          "rmsd_ub": 17.24
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.915,
+          "rmsd_lb": 14.74,
+          "rmsd_ub": 16.0
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 96.8,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 54.0μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG1-002",
+      "smiles": "OC(=O)CN1CCC(Cc2ccc(F)cc2)CC1",
+      "name": "2-(4-(4-fluorobenzyl)piperidin-1-yl)acetic acid",
+      "scaffold": "N-glycinate-piperidine + 4-F-benzyl",
+      "adc_handle": "COOH",
+      "rationale": "CG1-001 대비 N-acetic acid 링커: 유연한 COOH ADC 핸들 / 같은 F-benzyl 약물단"
+    },
+    "rdkit": {
+      "mw": 251.3,
+      "logp": 2.165,
+      "qed": 0.8912,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.4108,
+      "ames": 0.0345,
+      "dili": 0.2269,
+      "hia": 0.9885,
+      "hia_corrected": 1.0,
+      "bbb": 0.8693,
+      "cyp3a4": 0.3959,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.227 < 0.4": true,
+        "hERG 0.411 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG1-002",
+      "best_dG": -5.927,
+      "best_Ki_uM": 44.962,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.927,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.856,
+          "rmsd_lb": 16.66,
+          "rmsd_ub": 18.1
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.596,
+          "rmsd_lb": 13.72,
+          "rmsd_ub": 14.99
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.505,
+          "rmsd_lb": 14.43,
+          "rmsd_ub": 15.51
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.492,
+          "rmsd_lb": 14.23,
+          "rmsd_ub": 15.33
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.245,
+          "rmsd_lb": 14.98,
+          "rmsd_ub": 15.78
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.239,
+          "rmsd_lb": 2.186,
+          "rmsd_ub": 3.033
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.066,
+          "rmsd_lb": 2.511,
+          "rmsd_ub": 3.476
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.977,
+          "rmsd_lb": 5.807,
+          "rmsd_ub": 8.219
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 81.9,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 45.0μM ≥ 1μM 목표 미달",
+        "hERG 0.4108 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG1-003",
+      "smiles": "OC(=O)C1CN(Cc2ccc(F)cc2)C1",
+      "name": "1-(4-fluorobenzyl)azetidine-3-carboxylic acid",
+      "scaffold": "Azetidine-3-COOH + 4-F-benzyl",
+      "adc_handle": "COOH",
+      "rationale": "4원환 축소 링: TM 포켓 tight fit 탐색 / Fsp3 최대화"
+    },
+    "rdkit": {
+      "mw": 209.22,
+      "logp": 1.342,
+      "qed": 0.8163,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1425,
+      "ames": 0.1004,
+      "dili": 0.2065,
+      "hia": 0.9874,
+      "hia_corrected": 1.0,
+      "bbb": 0.8715,
+      "cyp3a4": 0.2768,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.206 < 0.4": true,
+        "hERG 0.142 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG1-003",
+      "best_dG": -5.536,
+      "best_Ki_uM": 87.021,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.536,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -4.887,
+          "rmsd_lb": 12.58,
+          "rmsd_ub": 14.96
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -4.872,
+          "rmsd_lb": 16.7,
+          "rmsd_ub": 18.07
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -4.808,
+          "rmsd_lb": 4.668,
+          "rmsd_ub": 6.855
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -4.792,
+          "rmsd_lb": 4.403,
+          "rmsd_ub": 6.825
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -4.785,
+          "rmsd_lb": 11.92,
+          "rmsd_ub": 13.94
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -4.72,
+          "rmsd_lb": 18.67,
+          "rmsd_ub": 19.67
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -4.55,
+          "rmsd_lb": 15.77,
+          "rmsd_ub": 16.58
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.547,
+          "rmsd_lb": 16.29,
+          "rmsd_ub": 17.54
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 96.2,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 87.0μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG1-004",
+      "smiles": "OC(=O)C1CCC(Cc2ccc(F)cc2)CC1",
+      "name": "4-(4-fluorobenzyl)cyclohexane-1-carboxylic acid",
+      "scaffold": "Cyclohexane-COOH + 4-F-benzyl (N-free)",
+      "adc_handle": "COOH",
+      "rationale": "질소 제거 → hERG 최소화 / 순수 탄화수소 scaffold = 낮은 DILI 기대"
+    },
+    "rdkit": {
+      "mw": 236.29,
+      "logp": 3.259,
+      "qed": 0.8742,
+      "hbd": 1,
+      "hba": 1,
+      "tpsa": 37.3,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1324,
+      "ames": 0.0101,
+      "dili": 0.3556,
+      "hia": 0.9972,
+      "hia_corrected": 1.0,
+      "bbb": 0.7861,
+      "cyp3a4": 0.3815,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.356 < 0.4": true,
+        "hERG 0.132 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG1-004",
+      "best_dG": -6.436,
+      "best_Ki_uM": 19.0335,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.436,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -6.432,
+          "rmsd_lb": 14.67,
+          "rmsd_ub": 17.08
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.268,
+          "rmsd_lb": 13.87,
+          "rmsd_ub": 15.42
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.134,
+          "rmsd_lb": 1.575,
+          "rmsd_ub": 2.089
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.045,
+          "rmsd_lb": 18.43,
+          "rmsd_ub": 19.55
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.018,
+          "rmsd_lb": 18.35,
+          "rmsd_ub": 19.7
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.966,
+          "rmsd_lb": 12.88,
+          "rmsd_ub": 15.41
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.777,
+          "rmsd_lb": 15.15,
+          "rmsd_ub": 16.15
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.747,
+          "rmsd_lb": 14.51,
+          "rmsd_ub": 16.24
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 96.7,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 19.0μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG1-005",
+      "smiles": "OC(=O)C1CCN(Cc2ccncc2)CC1",
+      "name": "1-(pyridin-4-ylmethyl)piperidine-4-carboxylic acid",
+      "scaffold": "Piperidine-4-COOH + 4-pyridylmethyl",
+      "adc_handle": "COOH",
+      "rationale": "F-phenyl -> pyridine: N H-bond to TM Ser / 더 낮은 DILI 예상"
+    },
+    "rdkit": {
+      "mw": 220.27,
+      "logp": 1.378,
+      "qed": 0.8357,
+      "hbd": 1,
+      "hba": 3,
+      "tpsa": 53.43,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1498,
+      "ames": 0.0067,
+      "dili": 0.2813,
+      "hia": 0.9923,
+      "hia_corrected": 1.0,
+      "bbb": 0.6668,
+      "cyp3a4": 0.1964,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.281 < 0.4": true,
+        "hERG 0.150 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG1-005",
+      "best_dG": -5.46,
+      "best_Ki_uM": 98.9387,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.46,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.282,
+          "rmsd_lb": 12.14,
+          "rmsd_ub": 14.74
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.18,
+          "rmsd_lb": 16.49,
+          "rmsd_ub": 17.97
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.101,
+          "rmsd_lb": 13.65,
+          "rmsd_ub": 16.54
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -4.913,
+          "rmsd_lb": 16.0,
+          "rmsd_ub": 17.65
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -4.587,
+          "rmsd_lb": 3.717,
+          "rmsd_ub": 6.577
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -4.477,
+          "rmsd_lb": 18.53,
+          "rmsd_ub": 20.07
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -4.447,
+          "rmsd_lb": 16.14,
+          "rmsd_ub": 17.7
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.39,
+          "rmsd_lb": 16.6,
+          "rmsd_ub": 18.17
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 96.4,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 98.9μM ≥ 1μM 목표 미달"
+      ]
+    }
+  }
+]

@@ -1,0 +1,5 @@
+formula,conductivity_mS_cm,status,note
+Li6PS4Cl2 (Cl증량),16.2878,✅ PASS,S→Cl 1개 치환
+Li6PS5Br (베이스),7.2991,✅ PASS,Gen4 재검증
+Li6PS5Cl (베이스),6.5609,✅ PASS,Gen4 재검증
+Li5AlPS5Cl (Al도핑),1.4113,⚠️ LOW,Li→Al 1개 치환

@@ -1,0 +1,43 @@
+﻿=== Clinical-Gate Batch 010 Report === [10,000건 마일스톤]
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 353건 (35.3%)
+  ENROLLMENT  : 314건 (31.4%)
+  BUSINESS    : 137건 (13.7%)
+  EXTERNAL    : 76건 (7.6%)
+  EFFICACY    : 45건 (4.5%)
+  SAFETY      : 44건 (4.4%)
+  REGULATORY  : 31건 (3.1%)
+
+[핵심 지표]
+UNKNOWN 비율    : 35.3% (353 건)
+endpoint_miss   : 2.6% (26 건)
+confidence 평균 : 0.433
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT00928941 | The PI has left the project and the VA, as of 3/2011
+  NCT05821322 | The protocol did not work.
+  NCT01066546 | See termination reason in detailed description.
+  NCT03530527 | The study was terminated because of difficulty in completing the study as originally planned
+  NCT04981470 | Device modifications needed
+  NCT03262194 | The introduction of new recommendations for early neonatal infection has drastically reduced the need for gastric aspiration at birth.
+  NCT04473651 | The study was terminated for strategic reasons.
+  NCT03565172 | protocol with too many constraints. long protocol
+  NCT02755480 | PI has left UHN. This study is no longer running at UHN.
+  NCT01051180 | Doppler device company wanted hospital to stop recruiting
+
+==========================================
+=== 누적 현황 (Batch 001~010 = 10000건) ===
+==========================================
+  UNKNOWN     : 3529건 (35.3%)
+  ENROLLMENT  : 2976건 (29.8%)
+  BUSINESS    : 1406건 (14.1%)
+  EXTERNAL    : 863건 (8.6%)
+  SAFETY      : 505건 (5.1%)
+  EFFICACY    : 427건 (4.3%)
+  REGULATORY  : 294건 (2.9%)
+→ 누적 UNKNOWN: 35.3% (3529 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxuZ_Gl1fQZkA

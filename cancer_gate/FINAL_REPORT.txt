@@ -1,0 +1,158 @@
+﻿================================================================================
+  CANCER-GATE PROJECT — 최종 리드 최적화 보고서
+  타깃: mGluR4 양성 알로스테릭 조절자 (PAM)
+  수용체: 7E9H Chain R (Gi-결합 mGluR4 cryo-EM, 3.34 Å)
+  날짜: 2026-06-19
+================================================================================
+
+1. 프로젝트 개요
+----------------
+목표: mGluR4 TM 알로스테릭 포켓 선택적 PAM 개발
+     Ki < 1 μM / hERG < 0.3 / DILI < 0.4 / mGluR5 선택성 지수 ≥ 10x
+
+플랫폼:
+  - 도킹: AutoDock Vina 1.2.7 (exhaustiveness 16→48)
+  - ADMET: ADMET-AI (COOH +20%p HIA 보정 적용)
+  - MD: OpenMM + OpenFF Sage 2.2.0 (진공, 300K, Kabsch-aligned 중원자 RMSD)
+  - 선택성: mGluR5 5CGC Chain A, NAM 포켓 (51D 리간드 중심)
+
+2. 세대별 최적화 요약 (Gen0 → Gen15)
+--------------------------------------
+Gen0  기준 스캐폴드: 3,4-diF-Ph + CF2-cyclopropane + COOH
+      결과: Ki ~3-8 μM (초기 히트 확인)
+
+Gen1-3  산성기 다양화 (COOH/SO3H/tetrazole)
+        핵심 발견: tetrazole → hERG 0.82-0.93 BLACKLIST
+                 COOH 단독 최적 (hERG 보호 역할)
+
+Gen4  박스 확장 (25Å → 30Å), 피페리딘 F 도입
+      핵심 발견: 3,3-gem-diF pip N-인접 → 결합 최적화
+
+Gen5-8  pip α-위치 변형, 방향족 환 스캐닝
+        W773 π-스태킹: 3,4-diF-Ph 고정 (이동 시 Ki 악화)
+
+Gen9  첫 Ki < 1 μM 달성
+      CG9-005: Ki = 0.725 μM ✅
+
+Gen10  2-Me-pip + CF2-cyclopropane 조합
+       ★ CG10-005: Ki = 0.345 μM  hERG = 0.259  DILI = 0.349  [GO]
+       SMILES: OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CCC1
+
+Gen11  pip α-메틸 변형 탐색 (exhaustiveness=48)
+       CG11-002 (2,2-diMe): Ki = 0.251 μM → hERG FAIL (BLACKLIST: gem-diMe pip)
+       CG11-001 (2-Et): Ki = 0.713 μM ✅ GO (차선 옵션)
+
+Gen12  hERG 감소 전략 (gem-diMe 회피)
+       CG12-004 (2-Me+3,3-diF+4-OH): Ki = 0.580 μM  hERG = 0.154  DILI = 0.312  [GO]
+       ★ hERG 최우수 후보
+
+Gen13  OH 위치 탐색 (Track A: 5-OH/6-OH, Track B: 4-F/4-OMe)
+       Track B 4-F: DILI = 0.404 FAIL (DILI 장벽 첫 확인)
+       Track B 4-OMe: DILI 경계, Ki 회복 미흡
+
+Gen14  3-monoF pip + CHF-cyclopropane 비교
+       CG14-001 (3-monoF+5-OH): Ki = 0.982 μM  hERG = 0.137  DILI = 0.329  [GO]
+       ★ hERG 절대 최우수 (0.137)
+       CG14-003 (CHF-cyclopropane 대조): Ki = 2.07 μM → CF2 필수성 재확인 (~6x 효능차)
+
+Gen15  DILI 장벽 돌파 시도
+       CG15-001 (4-F+N-deMe): DILI = 0.450 FAIL
+       CG15-002 (3,4-vicinal-diF): DILI OK (0.356), Ki = 1.279 μM COND
+       CG15-003 (Ph-3,5-diF+4-F pip): DILI = 0.404 FAIL (pip 4-F 패턴 반복)
+       CG15-004 (4-Cl bioisostere): DILI = 0.452 FAIL
+       결론: pip 4-F/4-Cl 계열은 DILI ≥ 0.40 고착 → 전략적 철수
+
+3. SAR 규칙 (확립)
+--------------------
+[필수 약효단]
+  CF2-cyclopropane   Walsh 궤도 입체 잠금, 제거 시 Ki 6배↑ (CHF 대조 실험)
+  3,4-diF-Ph         W773 잔기 π-스태킹 앵커, 위치 이동 불가
+  COOH               ADC 핸들 + hERG 차폐 (SO3H ≈, tetrazole BLACKLIST)
+  3,3-gem-diF pip    N-인접 쌍불소, 결합 포켓 최적 충진
+
+[최적 변형]
+  pip 2-Me           결합력 유지, 입체 보호 (CG10-005 기반)
+  pip 4-OH           hERG 최소화 (0.154), DILI OK, Ki 일부 희생
+
+[BLACKLIST]
+  tetrazole          hERG ≥ 0.82
+  gem-diMe pip       hERG ≥ 0.344 (불소 수 무관)
+  pip 4-F/4-Cl       DILI ≥ 0.40 고착
+  cyclopropane C3 변형  도킹 일관성 악화
+
+4. 최종 GO 후보 프로파일
+--------------------------
+                    CG10-005        CG12-004        CG14-001
+─────────────────────────────────────────────────────────────
+SMILES              *아래 참조*     *아래 참조*     *아래 참조*
+Ki (μM)             0.345           0.580           0.982
+dG (kcal/mol)      -8.811          -7.948          -7.393
+hERG               0.259           0.154 ★         0.137 ★★
+DILI               0.349           0.312 ★         0.329
+HIA (보정)          ≥0.99           ≥0.99           ≥0.99
+MW (g/mol)         381.3           397.3           383.3
+LogP               3.67            2.64            2.71
+QED                0.81            0.79            0.80
+Lipinski           PASS            PASS            PASS
+
+MD (RMSD, Å)
+  FAST (500 steps)  0.15            0.20            —
+  FULL (5000 steps) 1.73            0.14 ★★        —
+  안정성             STABLE          STABLE (최우수)  —
+
+선택성 (mGluR5)
+  Ki(5CGC, μM)      9.81            11.19           17.75
+  SI (×)            28.4x ★★       19.3x           18.1x
+
+종합 평가           Ki 최고/SI 최고  균형 최적        hERG 절대최고
+                   hERG 경계선      MD 안정 최고     Ki 기준 미달
+
+SMILES:
+  CG10-005: OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CCC1
+  CG12-004: OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CC(O)C1
+  CG14-001: OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)CC(O)C1
+
+5. 최종 리드 선정 근거
+-----------------------
+1순위: CG10-005
+  - 최고 결합력 (Ki = 0.345 μM, 목표 <0.5 μM 달성)
+  - 최고 선택성 (SI = 28.4x, mGluR5 오프타깃 최소)
+  - DILI 0.349 / ADMET 전 항목 합격
+  - MD STABLE (FULL RMSD 1.73Å, 허용 범위 내)
+  - 한계: hERG 0.259 (기준 0.3 이내이나 최소 여유)
+
+2순위: CG12-004  [백업 리드]
+  - 최우수 MD 안정성 (FULL RMSD 0.14Å — 거의 무변형)
+  - hERG 0.154 (기준 대비 2배 여유)
+  - DILI 0.312 (가장 낮음)
+  - 한계: Ki 0.580 μM (목표 대비 약 1.7배)
+
+3순위: CG14-001  [hERG 우선 필요 시]
+  - hERG 0.137 (프로젝트 최저)
+  - Ki 0.982 μM (1 μM 근처, 추가 최적화 필요)
+
+6. 권고 사항
+-------------
+실험 검증 우선순위:
+  1) CG10-005 → mGluR4 기능 분석 (Ca²⁺ flux / cAMP), hERG patch clamp
+  2) CG12-004 → 위와 동일, 장기 안정성 (kinetic solubility)
+  3) CG10-005/CG12-004 복합체 공결정 구조 확보 (TM 포켓 결합모드 확인)
+
+차기 최적화 방향 (Gen16 제안):
+  - CG10-005 hERG 감소: 4-OH 추가 (→ CG12-004 방향) 또는 COOH 연장
+  - Ki < 0.2 μM 목표: 방향족 3-CN 치환 탐색 (DILI 모니터링)
+  - pip 4-OH 최적 입체화학 확인: (R)/(S) 분리
+
+7. 출력 파일
+-------------
+  도킹 결과:  C:\sigma_protocol\cancer_gate\cancer_gate_gen*_report.json
+  MD 결과:    C:\sigma_protocol\cancer_gate\md\cancer_gate_md_results.json
+              C:\sigma_protocol\cancer_gate\md\cancer_gate_md_report.txt
+  선택성:     C:\sigma_protocol\cancer_gate\selectivity\selectivity_results.json
+  수용체:     C:\sigma_protocol\cancer_gate\docking\7E9H\receptor_R.pdbqt
+  mGluR5:     C:\sigma_protocol\cancer_gate\selectivity\receptor_5CGC.pdbqt
+
+================================================================================
+  리드 후보: CG10-005 (1순위) / CG12-004 (2순위)
+  Ki = 0.345 / 0.580 μM  |  SI = 28.4x / 19.3x  |  ADMET 전 기준 합격
+================================================================================

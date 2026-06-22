@@ -1,0 +1,565 @@
+[
+  {
+    "candidate": {
+      "id": "CG3-001",
+      "smiles": "OC(=O)C1CCN(CCc2ccc(F)c(F)c2OC)CC1",
+      "name": "1-(4,5-difluoro-2-methoxyphenethyl)piperidine-4-carboxylic acid",
+      "scaffold": "Piperidine-4-COOH + 4,5-diF-2-OMe-phenethyl",
+      "adc_handle": "COOH",
+      "rationale": "CG2-005 + ortho-OMe: H-bond acceptor 추가 → TM Ser 접촉 / MW=299 포켓 체적 확장"
+    },
+    "rdkit": {
+      "mw": 299.32,
+      "logp": 2.312,
+      "qed": 0.9062,
+      "hbd": 1,
+      "hba": 3,
+      "tpsa": 49.77,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2121,
+      "ames": 0.037,
+      "dili": 0.0715,
+      "hia": 0.982,
+      "hia_corrected": 1.0,
+      "bbb": 0.836,
+      "cyp3a4": 0.2868,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.071 < 0.4": true,
+        "hERG 0.212 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG3-001",
+      "best_dG": -5.529,
+      "best_Ki_uM": 88.0558,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.529,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.466,
+          "rmsd_lb": 4.692,
+          "rmsd_ub": 8.346
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.404,
+          "rmsd_lb": 5.417,
+          "rmsd_ub": 9.895
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.394,
+          "rmsd_lb": 4.45,
+          "rmsd_ub": 6.566
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.3,
+          "rmsd_lb": 4.786,
+          "rmsd_ub": 7.06
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.289,
+          "rmsd_lb": 15.86,
+          "rmsd_ub": 17.02
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.21,
+          "rmsd_lb": 13.01,
+          "rmsd_ub": 13.67
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.035,
+          "rmsd_lb": 13.05,
+          "rmsd_ub": 13.9
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.92,
+          "rmsd_lb": 5.561,
+          "rmsd_ub": 9.875
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 97.1,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 88.1μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG3-002",
+      "smiles": "OC(=O)C1CCN(CCc2ccc(F)c(F)c2C2CC2)CC1",
+      "name": "1-(2-cyclopropyl-4,5-difluorophenethyl)piperidine-4-carboxylic acid",
+      "scaffold": "Piperidine-4-COOH + cyclopropyl-diF-phenethyl",
+      "adc_handle": "COOH",
+      "rationale": "cyclopropyl 입체 확장 → TM5/TM6 소수성 포켓 형상 최적화 / Fsp3=0.588"
+    },
+    "rdkit": {
+      "mw": 309.36,
+      "logp": 3.181,
+      "qed": 0.9079,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.3726,
+      "ames": 0.0531,
+      "dili": 0.0655,
+      "hia": 0.9809,
+      "hia_corrected": 1.0,
+      "bbb": 0.8515,
+      "cyp3a4": 0.412,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.066 < 0.4": true,
+        "hERG 0.373 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG3-002",
+      "best_dG": -5.927,
+      "best_Ki_uM": 44.962,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.927,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.629,
+          "rmsd_lb": 5.901,
+          "rmsd_ub": 8.885
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.6,
+          "rmsd_lb": 4.54,
+          "rmsd_ub": 7.4
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.417,
+          "rmsd_lb": 13.74,
+          "rmsd_ub": 15.84
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.415,
+          "rmsd_lb": 13.89,
+          "rmsd_ub": 15.53
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.393,
+          "rmsd_lb": 1.11,
+          "rmsd_ub": 2.839
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.386,
+          "rmsd_lb": 13.57,
+          "rmsd_ub": 15.49
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.378,
+          "rmsd_lb": 1.472,
+          "rmsd_ub": 2.918
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.145,
+          "rmsd_lb": 2.17,
+          "rmsd_ub": 2.593
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 82.1,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 45.0μM ≥ 1μM 목표 미달",
+        "hERG 0.3726 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG3-003",
+      "smiles": "OC(=O)C1CCN(CCCc2ccc(F)c(F)c2OC)CC1",
+      "name": "1-(3-(4,5-difluoro-2-methoxyphenyl)propyl)piperidine-4-carboxylic acid",
+      "scaffold": "Piperidine-4-COOH + propyl-diF-OMe-phenyl",
+      "adc_handle": "COOH",
+      "rationale": "링커 CH2 연장(ethyl→propyl) + OMe: 포켓 심부 탐색 / MW=313 최대 체적"
+    },
+    "rdkit": {
+      "mw": 313.34,
+      "logp": 2.703,
+      "qed": 0.8771,
+      "hbd": 1,
+      "hba": 3,
+      "tpsa": 49.77,
+      "rotb": 6,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2742,
+      "ames": 0.0331,
+      "dili": 0.0651,
+      "hia": 0.9833,
+      "hia_corrected": 1.0,
+      "bbb": 0.8563,
+      "cyp3a4": 0.3242,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.065 < 0.4": true,
+        "hERG 0.274 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG3-003",
+      "best_dG": -6.095,
+      "best_Ki_uM": 33.8552,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.095,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.975,
+          "rmsd_lb": 7.172,
+          "rmsd_ub": 12.52
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.766,
+          "rmsd_lb": 5.754,
+          "rmsd_ub": 10.03
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.617,
+          "rmsd_lb": 13.12,
+          "rmsd_ub": 15.82
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.401,
+          "rmsd_lb": 5.874,
+          "rmsd_ub": 8.613
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.377,
+          "rmsd_lb": 14.64,
+          "rmsd_ub": 17.06
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.369,
+          "rmsd_lb": 4.459,
+          "rmsd_ub": 6.882
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.308,
+          "rmsd_lb": 6.187,
+          "rmsd_ub": 11.17
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.15,
+          "rmsd_lb": 1.413,
+          "rmsd_ub": 2.471
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 96.8,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 33.9μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG3-004",
+      "smiles": "OC(=O)C1COCCN1CCc2ccc(F)c(F)c2OC",
+      "name": "4-(4,5-difluoro-2-methoxyphenethyl)morpholine-3-carboxylic acid",
+      "scaffold": "Morpholine-3-COOH + diF-OMe-phenethyl",
+      "adc_handle": "COOH",
+      "rationale": "morpholine O: hERG 위험 최소화 + H-bond acceptor / OMe: TM 포켓 친화도 증가"
+    },
+    "rdkit": {
+      "mw": 301.29,
+      "logp": 1.301,
+      "qed": 0.8882,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 59.0,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2282,
+      "ames": 0.0967,
+      "dili": 0.5389,
+      "hia": 0.9674,
+      "hia_corrected": 1.0,
+      "bbb": 0.7034,
+      "cyp3a4": 0.344,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.539 >= 0.4": false,
+        "hERG 0.228 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG3-004",
+      "best_dG": -5.17,
+      "best_Ki_uM": 161.4605,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.17,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.088,
+          "rmsd_lb": 3.737,
+          "rmsd_ub": 7.085
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.08,
+          "rmsd_lb": 3.753,
+          "rmsd_ub": 6.896
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.069,
+          "rmsd_lb": 3.781,
+          "rmsd_ub": 6.65
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.047,
+          "rmsd_lb": 2.886,
+          "rmsd_ub": 4.638
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -4.879,
+          "rmsd_lb": 1.527,
+          "rmsd_ub": 2.601
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -4.786,
+          "rmsd_lb": 3.815,
+          "rmsd_ub": 6.671
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -4.778,
+          "rmsd_lb": 1.635,
+          "rmsd_ub": 2.193
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.749,
+          "rmsd_lb": 16.71,
+          "rmsd_ub": 19.81
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 69.9,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 161.5μM ≥ 1μM 목표 미달",
+        "DILI 0.5389 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG3-005",
+      "smiles": "OC(=O)C12CCN(CCc3ccc(F)c(F)c3)CC1CCC2",
+      "name": "2'-azaspiro[cyclobutane-1,4'-piperidine]-1'-(3,4-difluorophenethyl)-5'-carboxylic acid",
+      "scaffold": "Spiro[cyclobutane-piperidine]-COOH + 3,4-diF-phenethyl",
+      "adc_handle": "COOH",
+      "rationale": "spiro 링 제약: TM 포켓 3D 형상 lock / cyclobutane 체적 + rigid scaffold → 엔트로피 이득"
+    },
+    "rdkit": {
+      "mw": 309.36,
+      "logp": 3.084,
+      "qed": 0.929,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.5151,
+      "ames": 0.1267,
+      "dili": 0.1045,
+      "hia": 0.9937,
+      "hia_corrected": 1.0,
+      "bbb": 0.9009,
+      "cyp3a4": 0.5136,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.104 < 0.4": true,
+        "hERG 0.515 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG3-005",
+      "best_dG": -6.395,
+      "best_Ki_uM": 20.3982,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.395,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -6.084,
+          "rmsd_lb": 1.982,
+          "rmsd_ub": 2.793
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.051,
+          "rmsd_lb": 12.97,
+          "rmsd_ub": 15.19
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.047,
+          "rmsd_lb": 6.09,
+          "rmsd_ub": 9.352
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.983,
+          "rmsd_lb": 1.951,
+          "rmsd_ub": 2.763
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.756,
+          "rmsd_lb": 5.587,
+          "rmsd_ub": 8.455
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.693,
+          "rmsd_lb": 13.59,
+          "rmsd_ub": 16.03
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.677,
+          "rmsd_lb": 4.759,
+          "rmsd_ub": 7.228
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.477,
+          "rmsd_lb": 12.88,
+          "rmsd_ub": 15.13
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 82.3,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 20.4μM ≥ 1μM 목표 미달",
+        "hERG 0.5151 ≥ 0.3 FAIL"
+      ]
+    }
+  }
+]

@@ -1,0 +1,16 @@
+receptor = C:\sigma_protocol\docking\4EY7\receptor.pdbqt
+ligand   = C:\sigma_protocol\docking\4EY7\ligand.pdbqt
+
+center_x = -1.582
+center_y = -50.192
+center_z = 2.101
+
+size_x = 22.0
+size_y = 22.0
+size_z = 22.0
+
+out = C:\sigma_protocol\docking\4EY7\docking_out.pdbqt
+
+exhaustiveness = 16
+num_modes      = 9
+energy_range   = 3

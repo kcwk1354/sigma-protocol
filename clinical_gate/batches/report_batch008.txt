@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 008 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 358건 (35.8%)
+  ENROLLMENT  : 310건 (31%)
+  BUSINESS    : 136건 (13.6%)
+  EXTERNAL    : 77건 (7.7%)
+  EFFICACY    : 46건 (4.6%)
+  SAFETY      : 45건 (4.5%)
+  REGULATORY  : 28건 (2.8%)
+
+[핵심 지표]
+UNKNOWN 비율    : 35.8% (358 건)
+endpoint_miss   : 3.8% (38 건)
+confidence 평균 : 0.425
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT03823924 | logistic problems
+  NCT02504203 | Due to fewer than expected children enrolled and lower than expected overall mortality rate.
+  NCT01077440 | PI leaving institution
+  NCT00261417 | The development program has been terminated
+  NCT03233074 | Achievement of scientific objectives
+  NCT01545674 | Non-invasive Prenatal Screening CLIA test performance validated in other cohort. Decided samples not required, study aims achieved through other studies.
+  NCT02052297 | The study was terminated due to challenges recruiting subjects with fibrotic interstitial lung disease associated with a connective tissue disease for Part D
+  NCT03825913 | two key faculty members are no longer part of the study and institution
+  NCT01346579 | Study closed prematurely.
+  NCT06939946 | The NIH-funded project period has come to an end.
+
+[누적 현황 (Batch 001~008 = 8000건)]
+  UNKNOWN     : 2822건 (35.3%)
+  ENROLLMENT  : 2377건 (29.7%)
+  BUSINESS    : 1115건 (13.9%)
+  EXTERNAL    : 710건 (8.9%)
+  SAFETY      : 408건 (5.1%)
+  EFFICACY    : 334건 (4.2%)
+  REGULATORY  : 234건 (2.9%)
+→ 누적 UNKNOWN: 35.3% (2822 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxmYPmm2f0W

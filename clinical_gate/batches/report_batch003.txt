@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 003 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 365건 (36.5%)
+  ENROLLMENT  : 298건 (29.8%)
+  BUSINESS    : 148건 (14.8%)
+  EXTERNAL    : 88건 (8.8%)
+  SAFETY      : 46건 (4.6%)
+  REGULATORY  : 30건 (3%)
+  EFFICACY    : 25건 (2.5%)
+
+[핵심 지표]
+UNKNOWN 비율    : 36.5% (365 건)
+endpoint_miss   : 2.1% (21 건)
+confidence 평균 : 0.422
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT05934903 | Unable to meet adequate enrolment numbers for feasibility.
+  NCT04764825 | Due to extremely slow inclusion rates.
+  NCT00800280 | Please see Detailed Description for termination reason.
+  NCT03437460 | Implementation issues
+  NCT03115320 | High cancellation rate in LH test group in interim analysis
+  NCT01242020 | Unable to reliably reproduce, visualize, or quantify microvascular flow in the subcutaneous tissue, the skeletal muscle or peri-adventitia
+  NCT00695370 | Recruiting or enrolling participants has halted and will not resume
+  NCT04547140 | Study Stopped for Futility
+  NCT03500874 | The study was terminated prematurely due to FUDR production halt in China
+  NCT01633060 | Novartis decided not to pursue further development of buparlisib program (assessment of moderate PFS benefit with know, but manageable, buparlisib profile).
+
+[누적 현황 (Batch 001~003 = 3000건)]
+  UNKNOWN     : 1105건 (36.8%)
+  ENROLLMENT  : 847건 (28.2%)
+  BUSINESS    : 435건 (14.5%)
+  EXTERNAL    : 276건 (9.2%)
+  SAFETY      : 146건 (4.9%)
+  REGULATORY  : 99건 (3.3%)
+  EFFICACY    : 92건 (3.1%)
+→ 누적 UNKNOWN: 36.8% (1105 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxsY_Cm2PEW

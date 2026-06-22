@@ -1,0 +1,6 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+gen12__ref_gen11,CN1CCCC1OC12CC3CC(CC(O)(C3)C1)C2,0.816,2.138,5.26,🟠 어려움,0.14,0.898,0.025,0.859,0.027,PASS,PASS,—,✅ PASS
+gen12__pyr_N_phenyl,OC12CC3CC(C1)CC(OC1CCN(c4ccccc4)C1)(C3)C2,0.929,3.366,4.74,🟡 보통,0.465,0.925,0.272,0.772,0.05,FAIL,PASS,hERG=0.47≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen12__pyr_N_cyanophenyl,N#Cc1ccc(N2CCC(OC34CC5CC(CC(O)(C5)C3)C4)C2)cc1,0.919,3.237,4.89,🟡 보통,0.407,0.73,0.59,0.813,0.125,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전) | DILI=0.59≥0.4 (약물유발 간손상 — 낮을수록 안전),❌ FAIL
+gen12__pyr_N_fluorophenyl,OC12CC3CC(C1)CC(OC1CCN(c4ccc(F)cc4)C1)(C3)C2,0.92,3.505,4.79,🟡 보통,0.487,0.913,0.335,0.793,0.072,FAIL,PASS,hERG=0.49≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen12__pyr_3CN,CN1CCC(OC23CC4CC(CC(O)(C4)C2)C3)C1C#N,0.834,1.683,5.66,🟠 어려움,0.127,0.758,0.091,0.877,0.028,PASS,WARN,—,❌ FAIL

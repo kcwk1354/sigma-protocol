@@ -1,0 +1,22 @@
+tool: AutoDock Vina
+version_tested: "1.2.3"
+role: 단백질-리간드 도킹, 결합에너지 계산
+speed_tier: MEDIUM-SLOW
+exe_path: "C:/sigma_protocol/vina/vina.exe"
+environment:
+  python: "3.10"
+  conflicts: []
+speed_setting:
+  fast_mode:
+    exhaustiveness: 4
+    num_modes: 3
+  full_mode:
+    exhaustiveness: 8
+    num_modes: 9
+known_issues:
+  - "v1.2.4 에너지 정렬 버그 → v1.2.5+ 사용"
+last_verified: "2026-06-19"
+last_run_result: "OK"
+last_run_error: null
+run_count: 2
+used_in: [Epsilon-Gate, Cancer-Gate]

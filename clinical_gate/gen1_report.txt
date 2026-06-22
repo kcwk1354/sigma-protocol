@@ -1,0 +1,76 @@
+﻿=== Clinical-Gate Gen1 Quality Report ===
+날짜: 2026-06-21
+전체 레코드: 100 건
+
+[failure_token 분포]
+  UNKNOWN     : 41건 (41%)
+  ENROLLMENT  : 26건 (26%)
+  EXTERNAL    : 11건 (11%)
+  BUSINESS    : 10건 (10%)
+  REGULATORY  : 6건 (6%)
+  SAFETY      : 4건 (4%)
+  EFFICACY    : 2건 (2%)
+
+[핵심 지표]
+UNKNOWN 비율       : 41% (41 건)
+endpoint_miss 비율 : 4% (4 건)
+confidence 평균    : 0.366
+WhyStopped 공백    : 12 건
+
+[NULL 필드 현황]
+  phase_token              : 0건 (0%)
+  failure_token            : 0건 (0%)
+  intervention_type        : 0건 (0%)
+  endpoint_category        : 0건 (0%)
+  sponsor_type             : 0건 (0%)
+  enrollment_ratio         : 100건 (100%)
+  duration_months          : 0건 (0%)
+  condition_token          : 0건 (0%)
+  why_stopped_raw          : 12건 (12%)
+  primary_endpoint_raw     : 4건 (4%)
+
+=== 판단 ===
+경고: 키워드 룰 추가 보완 필요. UNKNOWN 샘플 확인 요망.
+
+=== UNKNOWN 원문 (41 건) ===
+  NCT00456846 | (공백/null)
+  NCT02895529 | Study is a commitment for license renew, we target on Apr19 submission, considering timeline, a cut off should be scheduled in Apr18.
+  NCT04188431 | Lack of finance
+  NCT00307645 | (공백/null)
+  NCT04427995 | product expired and could not be resupplied
+  NCT01997203 | complete patients samples required
+  NCT02516670 | insufficient clinical response per DSMB
+  NCT00439569 | Due to poor compliance with study drug administration.
+  NCT02498483 | Understaffing
+  NCT00184054 | Competing studies
+  NCT02276456 | (공백/null)
+  NCT03946631 | PI and Practice closed
+  NCT01288053 | No participant enrolled more than two years. No plan to continue study.
+  NCT03799445 | \<75% participation
+  NCT00302939 | (공백/null)
+  NCT01153646 | (공백/null)
+  NCT01085331 | Conduct the randomized Phase 2 part not recommended due to the achieved MTD for pimasertib (45mg/day) in combination with FOLFIRI
+  NCT04713995 | Sufficient samples and data have been collected for data analyses.
+  NCT01009957 | After primary completition date, experimental drug was no longer available
+  NCT03729401 | Testing supplies unavailable.
+  NCT02032784 | Difficult to enroll subjects
+  NCT02470052 | (공백/null)
+  NCT04565249 | Study halted and will not resume; participants are no longer being examined or receiving intervention
+  NCT03389048 | Protocol compliance and inability to support proper performance
+  NCT04865848 | research operation issues
+  NCT01101126 | An excess of all-cause acute health services utilization in the intervention arm
+  NCT05820685 | Study concluded because of drug shortage
+  NCT00176735 | (공백/null)
+  NCT05083208 | The clinical development of parsaclisib was stopped by it's manufacturer.
+  NCT03782168 | IRB approval expired; failure to submit continuing review in time. Will re-open once IRB approval is reinstated.
+  NCT01975350 | (공백/null)
+  NCT02053662 | No publishable data was acquired from the study and the primary researcher left over 5 years ago.
+  NCT06114303 | This study was terminated early on 16/06/2025 because the initial results obtained from the 14 pairs of patients included were sufficient to satisfactorily address the research question posed in the context of the thesis.
+  NCT04601103 | Device Deficiency
+  NCT02349386 | Inability to recruit patients
+  NCT00038805 | (공백/null)
+  NCT01189422 | (공백/null)
+  NCT01089777 | (공백/null)
+  NCT02146846 | (공백/null)
+  NCT04645186 | The study was terminated following a change in company management.
+  NCT02185170 | Results of 5 first patients show that chips' cauterization interferes the signal

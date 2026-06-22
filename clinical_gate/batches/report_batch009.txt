@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 009 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 354건 (35.4%)
+  ENROLLMENT  : 285건 (28.5%)
+  BUSINESS    : 154건 (15.4%)
+  EXTERNAL    : 77건 (7.7%)
+  SAFETY      : 53건 (5.3%)
+  EFFICACY    : 48건 (4.8%)
+  REGULATORY  : 29건 (2.9%)
+
+[핵심 지표]
+UNKNOWN 비율    : 35.4% (354 건)
+endpoint_miss   : 2.6% (26 건)
+confidence 평균 : 0.428
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT02412631 | Lorcaserin removed from market
+  NCT05686265 | Practical reasons (project coordinator has resigned and started new employment).
+  NCT02880111 | only one patient was included
+  NCT00915811 | FB ATG is now a standard for sib allo MDS patients
+  NCT01321866 | Inclusion curve too slow.
+  NCT00505856 | Resident project--resident left institution and was not picked up by anyone else
+  NCT04936451 | lack of recrutment
+  NCT00772629 | See detailed description for termination reason
+  NCT00738972 | Study terminated early due to sample size, not possible to perform further statistical analysis.
+  NCT00634101 | Study was resurrected as NCT00727558 (CR-0808)
+
+[누적 현황 (Batch 001~009 = 9000건)]
+  UNKNOWN     : 3176건 (35.3%)
+  ENROLLMENT  : 2662건 (29.6%)
+  BUSINESS    : 1269건 (14.1%)
+  EXTERNAL    : 787건 (8.7%)
+  SAFETY      : 461건 (5.1%)
+  EFFICACY    : 382건 (4.2%)
+  REGULATORY  : 263건 (2.9%)
+→ 누적 UNKNOWN: 35.3% (3176 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxuZfaj2vQdkA

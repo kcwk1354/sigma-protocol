@@ -1,0 +1,31 @@
+﻿=== Clinical-Gate Preflight Report ===
+날짜: 2026-06-21
+fetch 건수: 50
+
+[WhyStopped]
+존재: 45건 (90%)
+공백: 0건 (0%)
+실질 공백률: 10%
+판단: Gen0 진행 가능. 설계 유지.
+
+[PrimaryOutcomeMeasure]
+존재: 48건 (96%)
+공백: 2건 (4%)
+
+[Phase 분포]
+PHASE1: 7건
+PHASE2: 14건
+PHASE3: 6건
+기타: 23건
+
+[WhyStopped 샘플 10건]
+NCT00787462 | "Restrictive inclusion criteria/limited pool of suitable subjects with SFN."
+NCT02930161 | "Low recruitment"
+NCT04844970 | "The study closure was initiated by the financial sponsor and agreed upon by the site PI. The study is closing because of low enrollment and insufficient funds."
+NCT00839670 | "departure of the investigator coordinator into other country"
+NCT01929941 | "Business decision."
+NCT00003454 | "slow accrual"
+NCT04106505 | "Recruitment terminated prematurely due to SARS-CoV-2 pandemic"
+NCT05103722 | "Study terminated due to lack of funding"
+NCT01080222 | "Study discontinued"
+NCT03671551 | "Recruitment too low"

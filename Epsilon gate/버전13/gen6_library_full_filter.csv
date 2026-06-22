@@ -1,0 +1,9 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+ether_direct__ref_3cn_2f,N#Cc1cc(F)cc(OC23CCC4(O)CC(CC(C4)C2)C3)c1,0.909,3.55,4.87,🟡 보통,0.388,0.854,0.299,0.746,0.046,PASS,PASS,—,✅ PASS
+ether_direct__3cn_4f,N#Cc1cc(F)ccc1OC12CCC3(O)CC(CC(C3)C1)C2,0.909,3.55,4.79,🟡 보통,0.435,0.886,0.265,0.721,0.057,FAIL,PASS,hERG=0.43≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__3cn_5f,N#Cc1ccc(OC23CCC4(O)CC(CC(C4)C2)C3)cc1F,0.909,3.55,4.8,🟡 보통,0.397,0.835,0.313,0.722,0.058,PASS,PASS,—,✅ PASS
+ether_direct__3cn_only,N#Cc1ccccc1OC12CCC3(O)CC(CC(C3)C1)C2,0.905,3.411,4.72,🟡 보통,0.407,0.897,0.221,0.737,0.041,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__4cn_3f,N#Cc1cc(F)cc(OC23CCC4(O)CC(CC(C4)C2)C3)c1,0.909,3.55,4.87,🟡 보통,0.388,0.854,0.299,0.746,0.046,PASS,PASS,—,✅ PASS
+ether_direct__2cn_4f,N#Cc1cc(OC23CCC4(O)CC(CC(C4)C2)C3)ccc1F,0.909,3.55,4.81,🟡 보통,0.419,0.863,0.302,0.732,0.054,FAIL,PASS,hERG=0.42≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__4cn_2f,N#Cc1ccc(OC23CCC4(O)CC(CC(C4)C2)C3)c(F)c1,0.909,3.55,4.77,🟡 보통,0.399,0.839,0.294,0.745,0.06,PASS,PASS,—,✅ PASS
+ether_direct__3f_sulfonyl,NS(=O)(=O)c1ccc(F)cc1OC12CCC3(O)CC(CC(C3)C1)C2,0.871,2.326,4.82,🟡 보통,0.261,0.737,0.328,0.846,0.024,PASS,PASS,—,✅ PASS

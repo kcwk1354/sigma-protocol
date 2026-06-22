@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 004 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 358건 (35.8%)
+  ENROLLMENT  : 316건 (31.6%)
+  BUSINESS    : 130건 (13%)
+  EXTERNAL    : 81건 (8.1%)
+  EFFICACY    : 47건 (4.7%)
+  SAFETY      : 42건 (4.2%)
+  REGULATORY  : 26건 (2.6%)
+
+[핵심 지표]
+UNKNOWN 비율    : 35.8% (358 건)
+endpoint_miss   : 2.2% (22 건)
+confidence 평균 : 0.427
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT03272815 | Device requires further modification
+  NCT04122950 | Few interested participants
+  NCT00576056 | Bayer Healthcare is no supplying the study drug
+  NCT06057805 | data was sufficient to determine outcome
+  NCT01195129 | Due to results shown by the Cerecyte Clinical Trial, HCAT stopped enrolling.
+  NCT00737802 | Was not able to recruit the total anticipated number of subjects
+  NCT02557295 | Terminated
+  NCT03411421 | The study was closed as the data received to date did not support continuation of the study.
+  NCT00758121 | Inappropriate therapy associated with certain right ventricular (RV) lead complications may occur more frequently if the Respiratory Sensor is programmed On
+  NCT03322033 | Due to Medtronic no longer supporting the manufacturing of the custom/modified Valiant Captivia device required for the trial
+
+[누적 현황 (Batch 001~004 = 4000건)]
+  UNKNOWN     : 1463건 (36.6%)
+  ENROLLMENT  : 1163건 (29.1%)
+  BUSINESS    : 565건 (14.1%)
+  EXTERNAL    : 357건 (8.9%)
+  SAFETY      : 188건 (4.7%)
+  EFFICACY    : 139건 (3.5%)
+  REGULATORY  : 125건 (3.1%)
+→ 누적 UNKNOWN: 36.6% (1463 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxrYvii2v0W

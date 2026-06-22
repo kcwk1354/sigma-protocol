@@ -1,0 +1,454 @@
+[
+  {
+    "candidate": {
+      "id": "CG15-001",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1CC(F)(F)C(F)CC1",
+      "name": "N-deMe+3,3-diF+4-F pip",
+      "rationale": "2-Me 제거로 입체/전자 완화 → DILI 미세조정, Ki 유지 기대",
+      "scaffold": "CF2-cyclopropane",
+      "adc_handle": "COOH",
+      "exhaustiveness": 48
+    },
+    "rdkit": {
+      "mw": 385.28,
+      "logp": 3.231,
+      "qed": 0.8096,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1478,
+      "ames": 0.1434,
+      "dili": 0.4495,
+      "hia": 0.9607,
+      "hia_corrected": 1.0,
+      "bbb": 0.608,
+      "cyp3a4": 0.3966,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.450 >= 0.4": false,
+        "hERG 0.148 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG15-001",
+      "best_dG": -8.44,
+      "best_Ki_uM": 0.6452,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.44,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -8.378,
+          "rmsd_lb": 0.6622,
+          "rmsd_ub": 1.391
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -8.054,
+          "rmsd_lb": 1.829,
+          "rmsd_ub": 2.401
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.923,
+          "rmsd_lb": 1.441,
+          "rmsd_ub": 2.276
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -7.188,
+          "rmsd_lb": 1.622,
+          "rmsd_ub": 2.284
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.539,
+          "rmsd_lb": 20.87,
+          "rmsd_ub": 23.4
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.53,
+          "rmsd_lb": 20.73,
+          "rmsd_ub": 23.19
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.5,
+          "rmsd_lb": 20.22,
+          "rmsd_ub": 22.49
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.065,
+          "rmsd_lb": 23.72,
+          "rmsd_ub": 25.91
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 94.1,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": true,
+      "flags": [
+        "DILI 0.4495 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG15-002",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)C(F)CC1",
+      "name": "3,4-diF pip (gem→vicinal 재배치)",
+      "rationale": "3,3-gem-diF→3,4-vicinal-diF: 전자밀도 분산으로 DILI↓ 기대",
+      "scaffold": "CF2-cyclopropane",
+      "adc_handle": "COOH",
+      "exhaustiveness": 48
+    },
+    "rdkit": {
+      "mw": 381.32,
+      "logp": 3.323,
+      "qed": 0.8139,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2484,
+      "ames": 0.1316,
+      "dili": 0.3564,
+      "hia": 0.962,
+      "hia_corrected": 1.0,
+      "bbb": 0.6163,
+      "cyp3a4": 0.4278,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.356 < 0.4": true,
+        "hERG 0.248 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG15-002",
+      "best_dG": -8.035,
+      "best_Ki_uM": 1.2786,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.035,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.934,
+          "rmsd_lb": 1.862,
+          "rmsd_ub": 2.726
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.391,
+          "rmsd_lb": 2.743,
+          "rmsd_ub": 7.243
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.355,
+          "rmsd_lb": 1.743,
+          "rmsd_ub": 2.13
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -7.257,
+          "rmsd_lb": 2.52,
+          "rmsd_ub": 6.672
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.757,
+          "rmsd_lb": 2.364,
+          "rmsd_ub": 6.778
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.619,
+          "rmsd_lb": 20.45,
+          "rmsd_ub": 23.18
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.603,
+          "rmsd_lb": 20.3,
+          "rmsd_ub": 23.05
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.439,
+          "rmsd_lb": 3.867,
+          "rmsd_ub": 8.139
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 100,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 1.3μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG15-003",
+      "smiles": "OC(=O)C1(c2cc(F)c(F)cc2)C(F)(F)C1CN1C(C)C(F)(F)C(F)CC1",
+      "name": "Ph-3,5-diF + pip-2-Me-3,3-diF-4-F",
+      "rationale": "페닐 F위치 3,4→3,5 이성질체: W773 접촉 유지하며 전자분포 변화",
+      "scaffold": "CF2-cyclopropane",
+      "adc_handle": "COOH",
+      "exhaustiveness": 48
+    },
+    "rdkit": {
+      "mw": 399.31,
+      "logp": 3.62,
+      "qed": 0.7868,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.233,
+      "ames": 0.1006,
+      "dili": 0.4035,
+      "hia": 0.9726,
+      "hia_corrected": 1.0,
+      "bbb": 0.6245,
+      "cyp3a4": 0.4683,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.404 >= 0.4": false,
+        "hERG 0.233 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG15-003",
+      "best_dG": -8.888,
+      "best_Ki_uM": 0.3028,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.888,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -8.693,
+          "rmsd_lb": 1.212,
+          "rmsd_ub": 2.255
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.429,
+          "rmsd_lb": 2.388,
+          "rmsd_ub": 6.715
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.183,
+          "rmsd_lb": 1.392,
+          "rmsd_ub": 2.223
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -7.087,
+          "rmsd_lb": 1.985,
+          "rmsd_ub": 3.097
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -7.062,
+          "rmsd_lb": 20.15,
+          "rmsd_ub": 22.91
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.923,
+          "rmsd_lb": 20.68,
+          "rmsd_ub": 23.51
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.757,
+          "rmsd_lb": 25.76,
+          "rmsd_ub": 28.73
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.731,
+          "rmsd_lb": 2.96,
+          "rmsd_ub": 7.191
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 93.9,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": true,
+      "flags": [
+        "DILI 0.4035 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG15-004",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)C(Cl)CC1",
+      "name": "4-F→4-Cl 바이오이소스터",
+      "rationale": "F→Cl 바이오이소스터: DILI 패턴 변화 가능, LogP 3.89",
+      "scaffold": "CF2-cyclopropane",
+      "adc_handle": "COOH",
+      "exhaustiveness": 48
+    },
+    "rdkit": {
+      "mw": 415.76,
+      "logp": 3.889,
+      "qed": 0.599,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2864,
+      "ames": 0.1293,
+      "dili": 0.4523,
+      "hia": 0.9757,
+      "hia_corrected": 1.0,
+      "bbb": 0.6212,
+      "cyp3a4": 0.5426,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.452 >= 0.4": false,
+        "hERG 0.286 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG15-004",
+      "best_dG": -8.537,
+      "best_Ki_uM": 0.5477,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.537,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.242,
+          "rmsd_lb": 20.47,
+          "rmsd_ub": 23.18
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.386,
+          "rmsd_lb": 12.59,
+          "rmsd_ub": 15.11
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.216,
+          "rmsd_lb": 23.69,
+          "rmsd_ub": 25.89
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.147,
+          "rmsd_lb": 25.48,
+          "rmsd_ub": 27.64
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.099,
+          "rmsd_lb": 12.27,
+          "rmsd_ub": 14.67
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.06,
+          "rmsd_lb": 12.07,
+          "rmsd_ub": 14.37
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.043,
+          "rmsd_lb": 24.74,
+          "rmsd_ub": 27.21
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.0,
+          "rmsd_lb": 24.54,
+          "rmsd_ub": 27.0
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 92.0,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": true,
+      "flags": [
+        "DILI 0.4523 ≥ 0.4 FAIL"
+      ]
+    }
+  }
+]

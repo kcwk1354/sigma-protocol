@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 007 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 338건 (33.8%)
+  ENROLLMENT  : 293건 (29.3%)
+  BUSINESS    : 132건 (13.2%)
+  EXTERNAL    : 100건 (10%)
+  SAFETY      : 59건 (5.9%)
+  EFFICACY    : 54건 (5.4%)
+  REGULATORY  : 24건 (2.4%)
+
+[핵심 지표]
+UNKNOWN 비율    : 33.8% (338 건)
+endpoint_miss   : 2.3% (23 건)
+confidence 평균 : 0.44
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT03318172 | difficulty in recruting of patients
+  NCT04502836 | internal reasons
+  NCT00557219 | Main cooperator finished cooperation
+  NCT00069992 | Closed due to competing protocols
+  NCT04131192 | Combined with the analysis of the existing data of the trial, there was no obvious advantage compared with the clinical standard treatments, and the clinical trial was decided to be terminated based on the benefit of the subjects.
+  NCT00886951 | There seemed to be no uptake of the ligand in the areas of the brain expected for subjects with amyloid.
+  NCT02753972 | This research was completed before January 18, 2017, and does not meet the ACT requirement to register and report results per the guidance provided in "Clinical Trials Registration and Results Information Submission" dated 09/21/2016.
+  NCT01409681 | PI decided to terminate the study
+  NCT03146819 | Unable to identify sufficient number of patients to enroll
+  NCT00958022 | Based on the tolerabilty challenges of the combination
+
+[누적 현황 (Batch 001~007 = 7000건)]
+  UNKNOWN     : 2464건 (35.2%)
+  ENROLLMENT  : 2067건 (29.5%)
+  BUSINESS    : 979건 (14%)
+  EXTERNAL    : 633건 (9%)
+  SAFETY      : 363건 (5.2%)
+  EFFICACY    : 288건 (4.1%)
+  REGULATORY  : 206건 (2.9%)
+→ 누적 UNKNOWN: 35.2% (2464 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxnZvKn1fQW

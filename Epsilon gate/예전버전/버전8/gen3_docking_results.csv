@@ -1,0 +1,8 @@
+ID,SMILES,MW,LogP,TPSA,QED,Docking_dG
+ether_direct__bipyridyl,OC12CCC3(Oc4ccnc(-c5ccncc5)c4)CC(CC(C1)C3)C2,336.44,3.996,55.24,0.92,-4.191
+ether_ethyl__cyano_pyridyl_4,N#Cc1cc(CCOC23CCC4(O)CC(CC(C4)C2)C3)ccn1,312.41,2.986,66.14,0.928,-3.932
+ether_ethyl__methyl_pyridyl_4,Cc1cc(CCOC23CCC4(O)CC(CC(C4)C2)C3)ccn1,301.43,3.423,42.35,0.926,-3.912
+ether_ethyl__fluorophenyl,OC12CCC3(OCCc4ccc(F)cc4)CC(CC(C1)C3)C2,304.41,3.859,29.46,0.915,-3.713
+ether_ethyl__pyridyl_4,OC12CCC3(OCCc4ccncc4)CC(CC(C1)C3)C2,287.4,3.115,42.35,0.925,-3.541
+ether_direct__methyl_pyridyl_4,Cc1cc(OC23CCC4(O)CC(CC(C4)C2)C3)ccn1,273.38,3.243,42.35,0.899,-3.409
+ether_direct__cyano_pyridyl_4,N#Cc1cc(OC23CCC4(O)CC(CC(C4)C2)C3)ccn1,284.36,2.806,66.14,0.907,-3.404

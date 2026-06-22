@@ -1,0 +1,7 @@
+n_Cl_added,formula,S_remaining,conductivity_mS_cm,status,desc
+0,Li6 P1 S5 Cl1,5,6.5609,✅ PASS,Li6PS5Cl (베이스)
+1,Li6 P1 S4 Cl2,4,16.2878,🏆 TOP,Li6PS4Cl2 (Gen6 🏆)
+2,Li6 P1 S3 Cl3,3,4.9604,✅ PASS,Li6PS3Cl3 (Gen6 급락)
+3,Li6 P1 S2 Cl4,2,10.6818,🏆 TOP,Li6PS2Cl4 (Gen6 반등)
+4,Li6 P1 S1 Cl5,1,8.8914,✅ PASS,Li6PSCl5 (신규 탐색)
+5,Li6 P1 Cl6,0,16.0551,🏆 TOP,Li6PCl6 (S 전부 치환 — 구조 붕괴?)

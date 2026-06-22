@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 002 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 375건 (37.5%)
+  ENROLLMENT  : 270건 (27%)
+  BUSINESS    : 146건 (14.6%)
+  EXTERNAL    : 89건 (8.9%)
+  SAFETY      : 51건 (5.1%)
+  EFFICACY    : 37건 (3.7%)
+  REGULATORY  : 32건 (3.2%)
+
+[핵심 지표]
+UNKNOWN 비율    : 37.5% (375 건)
+endpoint_miss   : 2.1% (21 건)
+confidence 평균 : 0.413
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT03551717 | Lack of inclusion
+  NCT04417517 | While intended to be a Phase 1/2 clinical study, the study did not proceed to Phase 2.
+  NCT05250310 | We have closed the study as subjects were not interested in participating.
+  NCT02107560 | Because of small number of enrolled patients, we terminated this study.
+  NCT00618696 | Replaced with another study
+  NCT00311246 | Difficulty in recruiting subjects
+  NCT06782503 | Lack of interest by parole division in continuing training.
+  NCT04315961 | Unable to recruit participants.
+  NCT01230918 | Costs of study procedures has changed and escalated and became prohibitive.
+  NCT00547482 | Protocol design under review.
+
+[누적 현황 (Batch 001+002 = 2000건)]
+  UNKNOWN     : 740건 (37%)
+  ENROLLMENT  : 549건 (27.4%)
+  BUSINESS    : 287건 (14.4%)
+  EXTERNAL    : 188건 (9.4%)
+  SAFETY      : 100건 (5%)
+  REGULATORY  : 69건 (3.4%)
+  EFFICACY    : 67건 (3.4%)
+→ 누적 UNKNOWN: 37% (740 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxtYfGl2vQW

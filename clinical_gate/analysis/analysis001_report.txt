@@ -1,0 +1,82 @@
+﻿=== Clinical-Gate Analysis001 Report ===
+날짜: 2026-06-21
+분석 대상: 6,471건 (UNKNOWN 3,529건 제외 / 전체 10,000건)
+
+[핵심 발견]
+1. EFFICACY 실패율은 Phase가 올라갈수록 증가: PHASE1(6.1%) → PHASE2(10.5%) → PHASE3(14.9%)
+   → 예상과 일치. 단, PHASE4에서 4.4%로 급감 (시판 후 연구는 이미 효능 검증됨)
+
+2. SAFETY 실패율은 PHASE1(15.4%)에서 가장 높고 PHASE4(2.6%)에서 가장 낮음
+   → 예상과 일치. 초기 독성 탐색 단계 특성 반영.
+
+3. ENROLLMENT 실패는 전 Phase에서 최다 원인이며 PHASE4(57.3%)에서 정점
+   → 카운터인튜이티브: 대규모 후기 임상일수록 모집이 더 어려움.
+   PHASE4 등록 기준이 협소하거나 경쟁 시험 증가가 원인으로 추정.
+
+4. INDUSTRY 스폰서는 BUSINESS 실패(33.2%)가 다른 유형 대비 2배 이상 높음
+   → 상업적 결정, 자금 철수, 우선순위 변경이 산업계 특유의 종료 원인.
+
+5. 실패 유형별 임상 기간 차이는 작음 (32~36개월)
+   → REGULATORY(36.3개월)가 가장 길어, 규제 이슈는 늦게 발현됨을 시사.
+   SAFETY(32.2개월)가 가장 짧아, 안전성 문제는 비교적 이른 시기에 발견됨.
+
+[Phase별 failure_token 분포 테이블]
+             ENROLLMENT  BUSINESS  EXTERNAL  SAFETY  EFFICACY  REGULATORY  (n)
+PHASE1          32.2%     33.4%     8.6%    15.4%     6.1%      4.4%    (1121)
+PHASE2          48.7%     20.7%     7.1%     9.6%    10.5%      3.4%    (1625)
+PHASE3          40.0%     19.4%     6.5%    11.7%    14.9%      7.5%     (643)
+PHASE4          57.3%     17.9%    14.3%     2.6%     4.4%      3.6%     (504)
+NA              49.6%     18.7%    20.8%     3.4%     2.7%      4.8%    (2578)
+
+[EFFICACY 실패율 by Phase]
+PHASE1: 6.1% (68/1121)
+PHASE2: 10.5% (171/1625)
+PHASE3: 14.9% (96/643)
+PHASE4: 4.4% (22/504)
+해석: Phase 상승과 EFFICACY 실패율은 양의 상관관계. PHASE3에서 정점.
+      PHASE4의 급감은 시판 후 연구의 특성(효능 이미 입증된 약물) 때문.
+
+[ENROLLMENT 실패율 by Phase]
+PHASE1: 32.2% (361/1121)
+PHASE2: 48.7% (791/1625)
+PHASE3: 40.0% (257/643)
+PHASE4: 57.3% (289/504)
+해석: PHASE4에서 ENROLLMENT 실패가 57.3%로 최고.
+      후기 시험일수록 좁은 적응증·경쟁 시험 증가로 모집 난이도 상승.
+      PHASE3의 40%는 PHASE2(48.7%)보다 낮음 → PHASE3는 규모로 보완 가능.
+
+[SAFETY 실패율 by Phase]
+PHASE1: 15.4% (173/1121)
+PHASE2: 9.6% (156/1625)
+PHASE3: 11.7% (75/643)
+PHASE4: 2.6% (13/504)
+해석: PHASE1에서 SAFETY가 15.4%로 최고. 독성 탐색 단계 특성 확인.
+      PHASE4의 2.6%는 장기 시판 약물의 안전성이 이미 확립된 것을 반영.
+
+[sponsor_type × failure_token]
+INDUSTRY  (n=2219): BUSINESS=33.2%  ENROLLMENT=29.3%  EFFICACY=11.4%
+OTHER     (n=3973): BUSINESS=16.2%  ENROLLMENT=54.8%  EFFICACY=4.0%
+NIH       (n= 120): BUSINESS=5.0%   ENROLLMENT=48.3%  EFFICACY=9.2%
+OTHER_GOV (n=  94): BUSINESS=11.7%  ENROLLMENT=47.9%  EFFICACY=4.3%
+해석: INDUSTRY는 BUSINESS 실패율이 33.2%로 타 스폰서의 2~6배.
+      비-INDUSTRY(OTHER, NIH, GOV)는 ENROLLMENT 실패가 48~55%로 지배적.
+      공공/학술 연구는 자금보다 모집 역량이 핵심 제약.
+
+[duration_months × failure_token]
+EFFICACY    평균: 32.8개월  중앙값: 27.8개월  (n=424)
+SAFETY      평균: 32.2개월  중앙값: 25.2개월  (n=501)
+ENROLLMENT  평균: 35.4개월  중앙값: 29.4개월  (n=2927)
+REGULATORY  평균: 36.3개월  중앙값: 28.0개월  (n=291)
+BUSINESS    평균: 33.0개월  중앙값: 24.8개월  (n=1397)
+EXTERNAL    평균: 32.3개월  중앙값: 25.0개월  (n=840)
+해석: 모든 실패 유형의 평균 기간이 32~36개월로 수렴 → 임상 종료는 시작 후
+      약 3년차에 집중. REGULATORY(36.3개월)가 가장 늦어 규제 이슈는 장기화됨.
+      SAFETY 중앙값(25.2개월)이 가장 짧아 독성 문제는 2년 내 발현이 많음.
+
+[카운터인튜이티브 발견]
+1. PHASE4 ENROLLMENT 실패율(57.3%)이 PHASE1(32.2%)보다 25%p 높음.
+   → 일반적 예상(초기 임상이 어렵다)과 반대.
+2. PHASE1 BUSINESS 실패율(33.4%)이 PHASE2(20.7%)보다 높음.
+   → 초기 임상에서 스폰서 철수·자금 부족이 독성만큼 중요한 종료 원인.
+3. 실패 유형별 임상 기간 차이가 4개월 이내로 작음 (32~36개월).
+   → 실패 원인과 무관하게 '3년 차 위기'가 존재하는 것으로 해석 가능.

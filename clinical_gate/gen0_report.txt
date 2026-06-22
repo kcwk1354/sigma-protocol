@@ -1,0 +1,28 @@
+﻿=== Clinical-Gate Gen0 Quality Report ===
+날짜: 2026-06-21
+전체 레코드: 100 건
+
+[failure_token 분포]
+  UNKNOWN     : 92건 (92%)
+  ENROLLMENT  : 3건 (3%)
+  BUSINESS    : 2건 (2%)
+  EXTERNAL    : 2건 (2%)
+  SAFETY      : 1건 (1%)
+
+[품질 지표]
+endpoint_miss 비율: 7% (7 건)
+failure_confidence 평균: 0.048
+UNKNOWN 비율: 92% (92 건)
+
+[NULL 필드 현황]
+  phase_token              : 0건 (0%)
+  status_token             : 0건 (0%)
+  failure_token            : 0건 (0%)
+  intervention_type        : 0건 (0%)
+  endpoint_category        : 0건 (0%)
+  sponsor_type             : 0건 (0%)
+  enrollment_ratio         : 100건 (100%)
+  duration_months          : 1건 (1%)
+  condition_token          : 0건 (0%)
+  why_stopped_raw          : 91건 (91%)
+  primary_endpoint_raw     : 7건 (7%)

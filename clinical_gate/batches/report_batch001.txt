@@ -1,0 +1,35 @@
+﻿=== Clinical-Gate Batch 001 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 365건 (36.5%)
+  ENROLLMENT  : 279건 (27.9%)
+  BUSINESS    : 141건 (14.1%)
+  EXTERNAL    : 99건 (9.9%)
+  SAFETY      : 49건 (4.9%)
+  REGULATORY  : 37건 (3.7%)
+  EFFICACY    : 30건 (3%)
+
+[핵심 지표]
+UNKNOWN 비율    : 36.5% (365 건)
+endpoint_miss   : 2.2% (22 건)
+confidence 평균 : 0.423
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT01080222 | Study discontinued
+  NCT01997203 | complete patients samples required
+  NCT03799445 | \<75% participation
+  NCT04713995 | Sufficient samples and data have been collected for data analyses.
+  NCT04565249 | Study halted and will not resume; participants are no longer being examined or receiving intervention
+  NCT04865848 | research operation issues
+  NCT01101126 | An excess of all-cause acute health services utilization in the intervention arm
+  NCT06114303 | This study was terminated early on 16/06/2025 because the initial results obtained from the 14 pairs of patients included were sufficient to satisfactorily address the research question posed in the context of the thesis.
+  NCT02829372 | Study halted prematurely and will not resume; participants are no longer being examined or receiving intervention
+  NCT02185170 | Results of 5 first patients show that chips' cauterization interferes the signal
+
+[누적 현황]
+tokenized_cumulative.csv: 1000 레코드
+누적 UNKNOWN 비율: 36.5%
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxuZPit1fEW

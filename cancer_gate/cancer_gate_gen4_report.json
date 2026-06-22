@@ -1,0 +1,565 @@
+[
+  {
+    "candidate": {
+      "id": "CG4-001",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1CCN1CCOCC1",
+      "name": "1-(3,4-difluorophenyl)-3-(2-morpholinoethyl)cyclopropane-1-carboxylic acid",
+      "scaffold": "VU0155041 core + morpholine tail",
+      "adc_handle": "COOH",
+      "rationale": "cyclopropane geometry -> W773 pi-stacking / morpholine: H-bond acceptor + sp3 / MW=311"
+    },
+    "rdkit": {
+      "mw": 311.33,
+      "logp": 2.029,
+      "qed": 0.9038,
+      "hbd": 1,
+      "hba": 3,
+      "tpsa": 49.77,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.1068,
+      "ames": 0.2215,
+      "dili": 0.3046,
+      "hia": 0.9642,
+      "hia_corrected": 1.0,
+      "bbb": 0.6907,
+      "cyp3a4": 0.2632,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.305 < 0.4": true,
+        "hERG 0.107 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG4-001",
+      "best_dG": -7.16,
+      "best_Ki_uM": 5.6041,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -7.16,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.129,
+          "rmsd_lb": 20.73,
+          "rmsd_ub": 22.94
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.028,
+          "rmsd_lb": 20.78,
+          "rmsd_ub": 22.76
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.937,
+          "rmsd_lb": 19.91,
+          "rmsd_ub": 23.01
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.875,
+          "rmsd_lb": 20.77,
+          "rmsd_ub": 23.25
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.702,
+          "rmsd_lb": 20.91,
+          "rmsd_ub": 22.74
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.659,
+          "rmsd_lb": 20.8,
+          "rmsd_ub": 23.0
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.55,
+          "rmsd_lb": 20.96,
+          "rmsd_ub": 22.79
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.33,
+          "rmsd_lb": 20.65,
+          "rmsd_ub": 22.89
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 100,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 5.6μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG4-002",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1OC",
+      "name": "1-(3,4-difluorophenyl)-2-methoxycyclopropane-1-carboxylic acid",
+      "scaffold": "VU0155041 core + 2-OMe cyclopropane",
+      "adc_handle": "COOH",
+      "rationale": "OMe at C2: H-bond acceptor within TM cavity / compact fit / MW=228"
+    },
+    "rdkit": {
+      "mw": 228.19,
+      "logp": 1.706,
+      "qed": 0.8561,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 46.53,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.0283,
+      "ames": 0.1096,
+      "dili": 0.728,
+      "hia": 0.987,
+      "hia_corrected": 1.0,
+      "bbb": 0.6622,
+      "cyp3a4": 0.2427,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.728 >= 0.4": false,
+        "hERG 0.028 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG4-002",
+      "best_dG": -6.028,
+      "best_Ki_uM": 37.9111,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.028,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.991,
+          "rmsd_lb": 0.7272,
+          "rmsd_ub": 1.657
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.859,
+          "rmsd_lb": 1.616,
+          "rmsd_ub": 3.066
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.839,
+          "rmsd_lb": 2.399,
+          "rmsd_ub": 3.135
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.802,
+          "rmsd_lb": 2.888,
+          "rmsd_ub": 4.369
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.79,
+          "rmsd_lb": 2.242,
+          "rmsd_ub": 3.036
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.768,
+          "rmsd_lb": 1.796,
+          "rmsd_ub": 3.485
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.712,
+          "rmsd_lb": 3.433,
+          "rmsd_ub": 4.886
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.647,
+          "rmsd_lb": 3.358,
+          "rmsd_ub": 5.207
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 76.6,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 37.9μM ≥ 1μM 목표 미달",
+        "DILI 0.728 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG4-003",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1CN1CCCCC1",
+      "name": "1-(3,4-difluorophenyl)-2-(piperidinylmethyl)cyclopropane-1-carboxylic acid",
+      "scaffold": "VU0155041 core + piperidinyl-CH2",
+      "adc_handle": "COOH",
+      "rationale": "piperidine N H-bond donor/acceptor: TM Ser contact / hydrophobic extension MW=295"
+    },
+    "rdkit": {
+      "mw": 295.33,
+      "logp": 2.793,
+      "qed": 0.9283,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2222,
+      "ames": 0.1537,
+      "dili": 0.1133,
+      "hia": 0.9605,
+      "hia_corrected": 1.0,
+      "bbb": 0.7902,
+      "cyp3a4": 0.3185,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.113 < 0.4": true,
+        "hERG 0.222 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG4-003",
+      "best_dG": -7.279,
+      "best_Ki_uM": 4.5838,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -7.279,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.013,
+          "rmsd_lb": 4.442,
+          "rmsd_ub": 7.048
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.96,
+          "rmsd_lb": 3.811,
+          "rmsd_ub": 6.302
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.87,
+          "rmsd_lb": 2.294,
+          "rmsd_ub": 3.202
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.867,
+          "rmsd_lb": 3.071,
+          "rmsd_ub": 4.816
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.782,
+          "rmsd_lb": 3.27,
+          "rmsd_ub": 5.731
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.408,
+          "rmsd_lb": 2.064,
+          "rmsd_ub": 3.079
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.272,
+          "rmsd_lb": 3.188,
+          "rmsd_ub": 5.786
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.074,
+          "rmsd_lb": 22.87,
+          "rmsd_ub": 25.14
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 100,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 4.6μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG4-004",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1c1ccncc1",
+      "name": "1-(3,4-difluorophenyl)-2-(pyridin-4-yl)cyclopropane-1-carboxylic acid",
+      "scaffold": "VU0155041 core + pyridyl (dual pi-stack)",
+      "adc_handle": "COOH",
+      "rationale": "diF-phenyl + pyridyl dual aromatic: W773 pi-stack + N H-bond acceptor / MW=275"
+    },
+    "rdkit": {
+      "mw": 275.25,
+      "logp": 2.87,
+      "qed": 0.9367,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 50.19,
+      "rotb": 3,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.0981,
+      "ames": 0.0214,
+      "dili": 0.8228,
+      "hia": 0.9968,
+      "hia_corrected": 1.0,
+      "bbb": 0.4311,
+      "cyp3a4": 0.2922,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.823 >= 0.4": false,
+        "hERG 0.098 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG4-004",
+      "best_dG": -6.791,
+      "best_Ki_uM": 10.4507,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.791,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -6.676,
+          "rmsd_lb": 1.529,
+          "rmsd_ub": 2.364
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.171,
+          "rmsd_lb": 1.779,
+          "rmsd_ub": 2.232
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.974,
+          "rmsd_lb": 20.83,
+          "rmsd_ub": 22.88
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.848,
+          "rmsd_lb": 22.84,
+          "rmsd_ub": 24.26
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.806,
+          "rmsd_lb": 26.86,
+          "rmsd_ub": 28.59
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.703,
+          "rmsd_lb": 22.17,
+          "rmsd_ub": 23.66
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.687,
+          "rmsd_lb": 21.97,
+          "rmsd_ub": 23.32
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.531,
+          "rmsd_lb": 26.7,
+          "rmsd_ub": 28.23
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 74.4,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 10.5μM ≥ 1μM 목표 미달",
+        "DILI 0.8228 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG4-005",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1(C)C",
+      "name": "1-(3,4-difluorophenyl)-2,2-dimethylcyclopropane-1-carboxylic acid",
+      "scaffold": "VU0155041 core + gem-dimethyl",
+      "adc_handle": "COOH",
+      "rationale": "gem-dimethyl: hydrophobic fill of TM pocket / rigid conformation lock / MW=226"
+    },
+    "rdkit": {
+      "mw": 226.22,
+      "logp": 2.717,
+      "qed": 0.8414,
+      "hbd": 1,
+      "hba": 1,
+      "tpsa": 37.3,
+      "rotb": 2,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.039,
+      "ames": 0.074,
+      "dili": 0.6248,
+      "hia": 0.9973,
+      "hia_corrected": 1.0,
+      "bbb": 0.7618,
+      "cyp3a4": 0.3587,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.625 >= 0.4": false,
+        "hERG 0.039 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG4-005",
+      "best_dG": -6.572,
+      "best_Ki_uM": 15.1276,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.572,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -6.554,
+          "rmsd_lb": 3.282,
+          "rmsd_ub": 4.537
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -6.531,
+          "rmsd_lb": 3.027,
+          "rmsd_ub": 4.831
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -6.184,
+          "rmsd_lb": 3.029,
+          "rmsd_ub": 4.549
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.141,
+          "rmsd_lb": 1.787,
+          "rmsd_ub": 2.111
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.08,
+          "rmsd_lb": 3.218,
+          "rmsd_ub": 5.218
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.05,
+          "rmsd_lb": 3.483,
+          "rmsd_ub": 5.125
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.975,
+          "rmsd_lb": 3.29,
+          "rmsd_ub": 4.989
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.882,
+          "rmsd_lb": 2.734,
+          "rmsd_ub": 3.838
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 76.4,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 15.1μM ≥ 1μM 목표 미달",
+        "DILI 0.6248 ≥ 0.4 FAIL"
+      ]
+    }
+  }
+]

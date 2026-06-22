@@ -1,0 +1,567 @@
+[
+  {
+    "candidate": {
+      "id": "CG6-001",
+      "smiles": "C1(c2ccc(F)c(F)c2)(c3nnn[nH]3)CC1CN4CCCCC4",
+      "name": "1-(3,4-difluorophenyl)-1-(1H-tetrazol-5-yl)-2-(piperidinylmethyl)cyclopropane",
+      "scaffold": "CG4-003 COOH→tetrazole (Option C 기준점)",
+      "adc_handle": "tetrazole",
+      "rationale": "순수 bioisostere 치환: pKa≈4.9 유지, 4개 N-H-bond acceptor로 이온 접촉 개선"
+    },
+    "rdkit": {
+      "mw": 319.36,
+      "logp": 2.27,
+      "qed": 0.9391,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 57.7,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": false,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.8235,
+      "ames": 0.3684,
+      "dili": 0.2,
+      "hia": 0.9997,
+      "hia_corrected": 0.9997,
+      "bbb": 0.947,
+      "cyp3a4": 0.641,
+      "cooh_correction_applied": false,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.200 < 0.4": true,
+        "hERG 0.824 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG6-001",
+      "best_dG": -6.375,
+      "best_Ki_uM": 21.0989,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.375,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.894,
+          "rmsd_lb": 1.655,
+          "rmsd_ub": 2.115
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.694,
+          "rmsd_lb": 14.84,
+          "rmsd_ub": 18.37
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.692,
+          "rmsd_lb": 13.75,
+          "rmsd_ub": 16.76
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.369,
+          "rmsd_lb": 14.27,
+          "rmsd_ub": 17.06
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.336,
+          "rmsd_lb": 14.6,
+          "rmsd_ub": 17.41
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.136,
+          "rmsd_lb": 12.3,
+          "rmsd_ub": 14.77
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.081,
+          "rmsd_lb": 16.74,
+          "rmsd_ub": 18.27
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.079,
+          "rmsd_lb": 16.09,
+          "rmsd_ub": 18.04
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 82.4,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 21.1μM ≥ 1μM 목표 미달",
+        "hERG 0.8235 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG6-002",
+      "smiles": "C1(c2ccc(F)c(F)c2)(c3nnn[nH]3)CC1(C)CN4CCCCC4",
+      "name": "1-(3,4-difluorophenyl)-1-(tetrazol-5-yl)-3-methyl-2-(piperidinylmethyl)cyclopropane",
+      "scaffold": "CG4-003 COOH→tetrazole + C3-methyl",
+      "adc_handle": "tetrazole",
+      "rationale": "Option A+C: C3-methyl → TM5 Val/Leu 소수성 클램프 / Fsp3=0.588 유지"
+    },
+    "rdkit": {
+      "mw": 333.39,
+      "logp": 2.66,
+      "qed": 0.9345,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 57.7,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": false,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.8868,
+      "ames": 0.3295,
+      "dili": 0.2121,
+      "hia": 0.9998,
+      "hia_corrected": 0.9998,
+      "bbb": 0.9495,
+      "cyp3a4": 0.6957,
+      "cooh_correction_applied": false,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.212 < 0.4": true,
+        "hERG 0.887 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG6-002",
+      "best_dG": -6.327,
+      "best_Ki_uM": 22.8805,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -6.327,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -6.171,
+          "rmsd_lb": 3.435,
+          "rmsd_ub": 6.681
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.707,
+          "rmsd_lb": 2.057,
+          "rmsd_ub": 2.99
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.564,
+          "rmsd_lb": 16.16,
+          "rmsd_ub": 18.18
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.521,
+          "rmsd_lb": 3.299,
+          "rmsd_ub": 6.5
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.452,
+          "rmsd_lb": 3.793,
+          "rmsd_ub": 7.136
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.392,
+          "rmsd_lb": 4.031,
+          "rmsd_ub": 7.419
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.221,
+          "rmsd_lb": 13.46,
+          "rmsd_ub": 16.06
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.114,
+          "rmsd_lb": 3.828,
+          "rmsd_ub": 6.87
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 82.3,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 22.9μM ≥ 1μM 목표 미달",
+        "hERG 0.8868 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG6-003",
+      "smiles": "C1(c2ccc(F)c(F)c2)(c3nnn[nH]3)CC1(OC)CN4CCCCC4",
+      "name": "1-(3,4-difluorophenyl)-1-(tetrazol-5-yl)-3-methoxy-2-(piperidinylmethyl)cyclopropane",
+      "scaffold": "CG4-003 COOH→tetrazole + C3-OMe",
+      "adc_handle": "tetrazole",
+      "rationale": "Option A+C: C3-OMe H-bond acceptor → TM Ser/Thr 추가 극성 접촉 / HBA=5"
+    },
+    "rdkit": {
+      "mw": 349.39,
+      "logp": 2.039,
+      "qed": 0.8948,
+      "hbd": 1,
+      "hba": 5,
+      "tpsa": 66.93,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": false,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.8319,
+      "ames": 0.4429,
+      "dili": 0.2755,
+      "hia": 0.9998,
+      "hia_corrected": 0.9998,
+      "bbb": 0.9407,
+      "cyp3a4": 0.7154,
+      "cooh_correction_applied": false,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.276 < 0.4": true,
+        "hERG 0.832 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG6-003",
+      "best_dG": -5.736,
+      "best_Ki_uM": 62.0775,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.736,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.639,
+          "rmsd_lb": 4.12,
+          "rmsd_ub": 6.73
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.632,
+          "rmsd_lb": 18.41,
+          "rmsd_ub": 20.2
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.613,
+          "rmsd_lb": 5.253,
+          "rmsd_ub": 8.349
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.529,
+          "rmsd_lb": 4.961,
+          "rmsd_ub": 8.244
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.495,
+          "rmsd_lb": 4.789,
+          "rmsd_ub": 6.216
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.393,
+          "rmsd_lb": 3.753,
+          "rmsd_ub": 5.445
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.391,
+          "rmsd_lb": 7.11,
+          "rmsd_ub": 10.78
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.181,
+          "rmsd_lb": 14.04,
+          "rmsd_ub": 16.1
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 81.9,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 62.1μM ≥ 1μM 목표 미달",
+        "hERG 0.8319 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG6-004",
+      "smiles": "C1(c2ccc(F)c(F)c2)(c3nnn[nH]3)CC1(C2CC2)CN4CCCCC4",
+      "name": "1-(3,4-difluorophenyl)-1-(tetrazol-5-yl)-3-cyclopropyl-2-(piperidinylmethyl)cyclopropane",
+      "scaffold": "CG4-003 COOH→tetrazole + C3-cyclopropyl",
+      "adc_handle": "tetrazole",
+      "rationale": "Option A+C: cyclopropyl Walsh orbital → 추가 π-stacking 기여 / Fsp3=0.632 최고"
+    },
+    "rdkit": {
+      "mw": 359.42,
+      "logp": 3.05,
+      "qed": 0.8915,
+      "hbd": 1,
+      "hba": 4,
+      "tpsa": 57.7,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": false,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.9268,
+      "ames": 0.4143,
+      "dili": 0.2301,
+      "hia": 0.9999,
+      "hia_corrected": 0.9999,
+      "bbb": 0.9645,
+      "cyp3a4": 0.7646,
+      "cooh_correction_applied": false,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.230 < 0.4": true,
+        "hERG 0.927 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG6-004",
+      "best_dG": -5.664,
+      "best_Ki_uM": 70.1039,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.664,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.639,
+          "rmsd_lb": 14.33,
+          "rmsd_ub": 16.59
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.625,
+          "rmsd_lb": 4.571,
+          "rmsd_ub": 7.375
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.3,
+          "rmsd_lb": 1.681,
+          "rmsd_ub": 2.379
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -5.269,
+          "rmsd_lb": 14.25,
+          "rmsd_ub": 16.61
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -5.131,
+          "rmsd_lb": 6.507,
+          "rmsd_ub": 9.181
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.111,
+          "rmsd_lb": 4.276,
+          "rmsd_ub": 7.459
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.07,
+          "rmsd_lb": 14.45,
+          "rmsd_ub": 16.6
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.981,
+          "rmsd_lb": 3.245,
+          "rmsd_ub": 5.334
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 81.9,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 70.1μM ≥ 1μM 목표 미달",
+        "hERG 0.9268 ≥ 0.3 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG6-005",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)CC1(OC)CN3CCCCC3",
+      "name": "1-(3,4-difluorophenyl)-1-carboxy-3-methoxy-2-(piperidinylmethyl)cyclopropane",
+      "scaffold": "CG4-003 COOH 유지 + C3-OMe (대조군)",
+      "adc_handle": "COOH",
+      "rationale": "Option A only: COOH 기준 C3-OMe 효과 단독 검증 / tetrazole vs COOH 비교"
+    },
+    "rdkit": {
+      "mw": 325.36,
+      "logp": 2.562,
+      "qed": 0.9039,
+      "hbd": 1,
+      "hba": 3,
+      "tpsa": 49.77,
+      "rotb": 5,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.332,
+      "ames": 0.224,
+      "dili": 0.2025,
+      "hia": 0.9676,
+      "hia_corrected": 1.0,
+      "bbb": 0.7848,
+      "cyp3a4": 0.4232,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": false,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.203 < 0.4": true,
+        "hERG 0.332 >= 0.3": false
+      }
+    },
+    "docking": {
+      "id": "CG6-005",
+      "best_dG": -5.318,
+      "best_Ki_uM": 125.7523,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -5.318,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -5.203,
+          "rmsd_lb": 2.212,
+          "rmsd_ub": 3.55
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -5.165,
+          "rmsd_lb": 2.51,
+          "rmsd_ub": 3.527
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -5.073,
+          "rmsd_lb": 4.247,
+          "rmsd_ub": 5.91
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -4.979,
+          "rmsd_lb": 15.92,
+          "rmsd_ub": 17.29
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -4.949,
+          "rmsd_lb": 3.214,
+          "rmsd_ub": 6.329
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -4.922,
+          "rmsd_lb": 3.265,
+          "rmsd_ub": 6.332
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -4.911,
+          "rmsd_lb": 2.324,
+          "rmsd_ub": 3.494
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -4.722,
+          "rmsd_lb": 13.94,
+          "rmsd_ub": 16.03
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 75.0,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 125.8μM ≥ 1μM 목표 미달",
+        "hERG 0.332 ≥ 0.3 FAIL"
+      ]
+    }
+  }
+]

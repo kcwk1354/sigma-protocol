@@ -1,0 +1,4 @@
+ID,Docking_dG,RMSD_mean,RMSD_max,RMSD_final,Stable,Grade,MD_ps
+ether_direct__bipyridyl,-4.191,2.374,2.607,2.607,True,⭐⭐  안정,10.0
+ether_ethyl__cyano_pyridyl_4,-3.932,4.102,4.387,4.149,False,△   불안정,10.0
+ether_ethyl__methyl_pyridyl_4,-3.912,2.924,3.201,3.201,True,⭐   보통,10.0

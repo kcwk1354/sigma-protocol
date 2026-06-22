@@ -1,0 +1,9 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+gen7__ref_gen6_4cn2f,N#Cc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)c(F)c1,0.909,3.16,4.7,🟡 보통,0.238,0.748,0.426,0.801,0.044,FAIL,PASS,DILI=0.43≥0.4 (약물유발 간손상 — 낮을수록 안전),❌ FAIL
+gen7__adamantyl_piperidine,OC12CC3CC(C1)CC(OCC1CCNCC1)(C3)C2,0.821,2.086,4.84,🟡 보통,0.196,0.792,0.022,0.738,0.025,PASS,PASS,—,✅ PASS
+gen7__piperidine_cyano,N#Cc1ccc(CN2CCC(COC34CC5CC(CC(O)(C5)C3)C4)CC2)cc1,0.842,3.871,4.53,🟡 보통,0.714,0.851,0.089,0.685,0.044,FAIL,PASS,hERG=0.71≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen7__dimethoxybenzyl,COc1ccc(COC23CC4CC(CC(O)(C4)C2)C3)cc1OC,0.905,3.304,4.33,🟡 보통,0.4,0.871,0.27,0.87,0.037,FAIL,PASS,hERG=0.40≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen7__dimethoxybenzyl_F,COc1cc(COC23CC4CC(CC(O)(C4)C2)C3)cc(F)c1OC,0.895,3.443,4.58,🟡 보통,0.362,0.856,0.314,0.857,0.024,PASS,PASS,—,✅ PASS
+gen7__methoxyphenyl_simple,COc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)cc1,0.92,3.158,4.37,🟡 보통,0.383,0.864,0.294,0.803,0.032,PASS,PASS,—,✅ PASS
+gen7__methoxyphenyl_F,COc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)cc1F,0.929,3.297,4.52,🟡 보통,0.4,0.893,0.275,0.795,0.033,FAIL,PASS,hERG=0.40≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen7__galantamine_motif,COc1cc(OC23CC4CC(CC(O)(C4)C2)C3)ccc1O,0.898,2.863,4.55,🟡 보통,0.399,0.645,0.239,0.765,0.047,PASS,PASS,—,✅ PASS

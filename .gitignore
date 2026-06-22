@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.exe
+clinical_gate.zip
+batches/raw_batch*.json
+raw_studies_gen*.json
+preflight/preflight_raw.json
+batches/next_page_token_*.txt
+cancer_gate/docking/7E9H/out_*.pdbqt

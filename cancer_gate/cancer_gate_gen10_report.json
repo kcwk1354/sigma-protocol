@@ -1,0 +1,556 @@
+[
+  {
+    "candidate": {
+      "id": "CG10-001",
+      "smiles": "OC(=O)C1(c2cccc(C(F)(F)F)c2)C(F)(F)C1CN1CC(F)(F)CCC1",
+      "name": "A1: 3-CF3-Ph",
+      "scaffold": "CF2-cyclopropane + 3,3-diF-pip",
+      "adc_handle": "COOH"
+    },
+    "rdkit": {
+      "mw": 399.31,
+      "logp": 4.024,
+      "qed": 0.7779,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2519,
+      "ames": 0.1066,
+      "dili": 0.4101,
+      "hia": 0.9809,
+      "hia_corrected": 1.0,
+      "bbb": 0.609,
+      "cyp3a4": 0.5032,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.410 >= 0.4": false,
+        "hERG 0.252 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG10-001",
+      "best_dG": -8.554,
+      "best_Ki_uM": 0.5322,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.554,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -8.452,
+          "rmsd_lb": 1.275,
+          "rmsd_ub": 2.091
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -8.044,
+          "rmsd_lb": 2.708,
+          "rmsd_ub": 6.602
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -8.023,
+          "rmsd_lb": 3.845,
+          "rmsd_ub": 5.146
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -8.014,
+          "rmsd_lb": 20.23,
+          "rmsd_ub": 22.9
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -7.947,
+          "rmsd_lb": 2.227,
+          "rmsd_ub": 6.635
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -7.941,
+          "rmsd_lb": 20.07,
+          "rmsd_ub": 22.72
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -7.881,
+          "rmsd_lb": 1.97,
+          "rmsd_ub": 2.603
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -7.241,
+          "rmsd_lb": 2.068,
+          "rmsd_ub": 3.023
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 93.8,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": true,
+      "flags": [
+        "DILI 0.4101 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG10-002",
+      "smiles": "OC(=O)C1(c2ccc(Cl)c(F)c2)C(F)(F)C1CN1CC(F)(F)CCC1",
+      "name": "A2: 3-F,4-Cl-Ph",
+      "scaffold": "CF2-cyclopropane + 3,3-diF-pip",
+      "adc_handle": "COOH"
+    },
+    "rdkit": {
+      "mw": 383.74,
+      "logp": 3.798,
+      "qed": 0.804,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2584,
+      "ames": 0.1342,
+      "dili": 0.4621,
+      "hia": 0.9578,
+      "hia_corrected": 1.0,
+      "bbb": 0.6141,
+      "cyp3a4": 0.4704,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.462 >= 0.4": false,
+        "hERG 0.258 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG10-002",
+      "best_dG": -8.326,
+      "best_Ki_uM": 0.7822,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.326,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.383,
+          "rmsd_lb": 2.558,
+          "rmsd_ub": 3.12
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.218,
+          "rmsd_lb": 3.735,
+          "rmsd_ub": 6.749
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.175,
+          "rmsd_lb": 3.834,
+          "rmsd_ub": 5.4
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -7.119,
+          "rmsd_lb": 3.562,
+          "rmsd_ub": 6.411
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.189,
+          "rmsd_lb": 2.876,
+          "rmsd_ub": 6.343
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.959,
+          "rmsd_lb": 21.43,
+          "rmsd_ub": 23.09
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.81,
+          "rmsd_lb": 15.21,
+          "rmsd_ub": 16.88
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.788,
+          "rmsd_lb": 21.86,
+          "rmsd_ub": 23.56
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 94.0,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": true,
+      "flags": [
+        "DILI 0.4621 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG10-003",
+      "smiles": "OC(=O)C1(c2cc(F)c(F)c(F)c2)C(F)(F)C1CN1CC(F)(F)CCC1",
+      "name": "A3: 3,4,5-triF-Ph",
+      "scaffold": "CF2-cyclopropane + 3,3-diF-pip",
+      "adc_handle": "COOH"
+    },
+    "rdkit": {
+      "mw": 385.28,
+      "logp": 3.423,
+      "qed": 0.638,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.141,
+      "ames": 0.1681,
+      "dili": 0.4308,
+      "hia": 0.9549,
+      "hia_corrected": 1.0,
+      "bbb": 0.5897,
+      "cyp3a4": 0.3906,
+      "cooh_correction_applied": true,
+      "dili_pass": false,
+      "herg_pass": true,
+      "gate_pass": false,
+      "filter_detail": {
+        "DILI 0.431 >= 0.4": false,
+        "hERG 0.141 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG10-003",
+      "best_dG": -8.118,
+      "best_Ki_uM": 1.1114,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.118,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.959,
+          "rmsd_lb": 0.6618,
+          "rmsd_ub": 1.831
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.335,
+          "rmsd_lb": 3.079,
+          "rmsd_ub": 6.515
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.033,
+          "rmsd_lb": 2.547,
+          "rmsd_ub": 6.474
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.525,
+          "rmsd_lb": 8.725,
+          "rmsd_ub": 11.76
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.139,
+          "rmsd_lb": 20.26,
+          "rmsd_ub": 21.64
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -5.918,
+          "rmsd_lb": 21.99,
+          "rmsd_ub": 24.41
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -5.909,
+          "rmsd_lb": 15.06,
+          "rmsd_ub": 17.73
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -5.884,
+          "rmsd_lb": 26.19,
+          "rmsd_ub": 28.83
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 82.4,
+      "verdict": "❌ FILTERED",
+      "gate_pass": false,
+      "ki_pass": false,
+      "flags": [
+        "Ki 1.1μM ≥ 1μM 목표 미달",
+        "DILI 0.4308 ≥ 0.4 FAIL"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG10-004",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1(C)CN1CC(F)(F)CCC1",
+      "name": "B1: C3-Me cyclopropane",
+      "scaffold": "CF2-cyclopropane + C3-Me + 3,3-diF-pip",
+      "adc_handle": "COOH"
+    },
+    "rdkit": {
+      "mw": 381.32,
+      "logp": 3.674,
+      "qed": 0.8095,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2906,
+      "ames": 0.1123,
+      "dili": 0.3713,
+      "hia": 0.9805,
+      "hia_corrected": 1.0,
+      "bbb": 0.6512,
+      "cyp3a4": 0.5325,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.371 < 0.4": true,
+        "hERG 0.291 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG10-004",
+      "best_dG": -8.039,
+      "best_Ki_uM": 1.27,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.039,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.959,
+          "rmsd_lb": 1.119,
+          "rmsd_ub": 1.306
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.247,
+          "rmsd_lb": 2.829,
+          "rmsd_ub": 5.546
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.161,
+          "rmsd_lb": 2.111,
+          "rmsd_ub": 6.369
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.717,
+          "rmsd_lb": 20.24,
+          "rmsd_ub": 22.22
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.62,
+          "rmsd_lb": 20.61,
+          "rmsd_ub": 22.18
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.416,
+          "rmsd_lb": 19.95,
+          "rmsd_ub": 22.12
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.36,
+          "rmsd_lb": 14.86,
+          "rmsd_ub": 18.01
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.103,
+          "rmsd_lb": 23.08,
+          "rmsd_ub": 24.98
+        }
+      ],
+      "docking_pass": false
+    },
+    "score": {
+      "score": 100,
+      "verdict": "⚡ CONDITIONAL",
+      "gate_pass": true,
+      "ki_pass": false,
+      "flags": [
+        "Ki 1.3μM ≥ 1μM 목표 미달"
+      ]
+    }
+  },
+  {
+    "candidate": {
+      "id": "CG10-005",
+      "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CCC1",
+      "name": "C1: 2-Me-3,3-diF-pip",
+      "scaffold": "CF2-cyclopropane + 2-Me-3,3-diF-pip",
+      "adc_handle": "COOH"
+    },
+    "rdkit": {
+      "mw": 381.32,
+      "logp": 3.672,
+      "qed": 0.8095,
+      "hbd": 1,
+      "hba": 2,
+      "tpsa": 40.54,
+      "rotb": 4,
+      "ro5": 0,
+      "lipinski_pass": true,
+      "has_cooh": true,
+      "has_nh2": false,
+      "qed_warn": false
+    },
+    "admet": {
+      "herg": 0.2585,
+      "ames": 0.1157,
+      "dili": 0.3486,
+      "hia": 0.9653,
+      "hia_corrected": 1.0,
+      "bbb": 0.6433,
+      "cyp3a4": 0.4588,
+      "cooh_correction_applied": true,
+      "dili_pass": true,
+      "herg_pass": true,
+      "gate_pass": true,
+      "filter_detail": {
+        "DILI 0.349 < 0.4": true,
+        "hERG 0.259 < 0.3": true
+      }
+    },
+    "docking": {
+      "id": "CG10-005",
+      "best_dG": -8.346,
+      "best_Ki_uM": 0.7562,
+      "all_modes": [
+        {
+          "mode": 1,
+          "affinity_kcal_mol": -8.346,
+          "rmsd_lb": 0.0,
+          "rmsd_ub": 0.0
+        },
+        {
+          "mode": 2,
+          "affinity_kcal_mol": -7.964,
+          "rmsd_lb": 1.047,
+          "rmsd_ub": 1.557
+        },
+        {
+          "mode": 3,
+          "affinity_kcal_mol": -7.434,
+          "rmsd_lb": 2.952,
+          "rmsd_ub": 6.772
+        },
+        {
+          "mode": 4,
+          "affinity_kcal_mol": -7.232,
+          "rmsd_lb": 20.73,
+          "rmsd_ub": 23.17
+        },
+        {
+          "mode": 5,
+          "affinity_kcal_mol": -6.824,
+          "rmsd_lb": 20.84,
+          "rmsd_ub": 22.62
+        },
+        {
+          "mode": 6,
+          "affinity_kcal_mol": -6.725,
+          "rmsd_lb": 2.478,
+          "rmsd_ub": 7.007
+        },
+        {
+          "mode": 7,
+          "affinity_kcal_mol": -6.575,
+          "rmsd_lb": 21.83,
+          "rmsd_ub": 23.48
+        },
+        {
+          "mode": 8,
+          "affinity_kcal_mol": -6.559,
+          "rmsd_lb": 12.87,
+          "rmsd_ub": 15.41
+        },
+        {
+          "mode": 9,
+          "affinity_kcal_mol": -6.531,
+          "rmsd_lb": 12.01,
+          "rmsd_ub": 14.34
+        }
+      ],
+      "docking_pass": true
+    },
+    "score": {
+      "score": 100,
+      "verdict": "✅ GO",
+      "gate_pass": true,
+      "ki_pass": true,
+      "flags": []
+    }
+  }
+]

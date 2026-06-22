@@ -1,0 +1,5 @@
+material_id,formula,D_cm2s,conductivity_mS_cm,status,temp_K,steps
+mp-985592,Li6PS5Cl,3.399e-08,1.9904,⚠️ LOW,700,500
+mp-1040450,Li5P(S2Cl)2,3.245e-08,1.8862,⚠️ LOW,700,500
+mp-985591,Li6PS5Br,1.926e-08,1.1196,⚠️ LOW,700,500
+mp-985583,Li3PS4 (Ge-free),1.632e-08,0.8047,⚠️ LOW,700,500

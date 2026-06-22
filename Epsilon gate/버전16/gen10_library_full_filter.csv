@@ -1,0 +1,9 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+gen10__ref_gen8_Nmethyl,CN1CCC(COC23CC4CC(CC(O)(C4)C2)C3)CC1,0.861,2.429,4.72,🟡 보통,0.294,0.909,0.015,0.811,0.019,PASS,PASS,—,✅ PASS
+gen10__tetrahydroisoquinoline,OC12CC3CC(C1)CC(OCC1CNc4ccccc41)(C3)C2,0.9,3.296,5.09,🟠 어려움,0.616,0.91,0.139,0.727,0.088,FAIL,PASS,hERG=0.62≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen10__Nmethyl_THIQ,CN1CC(COC23CC4CC(CC(O)(C4)C2)C3)c2ccccc21,0.929,3.32,5.02,🟠 어려움,0.712,0.938,0.115,0.735,0.088,FAIL,PASS,hERG=0.71≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+gen10__pyrrolidine,CN1CCCC1COC12CC3CC(CC(O)(C3)C1)C2,0.849,2.181,5.06,🟠 어려움,0.27,0.882,0.016,0.777,0.017,PASS,PASS,—,✅ PASS
+gen10__morpholine,OC12CC3CC(C1)CC(OCC1CCOCC1)(C3)C2,0.853,2.513,4.79,🟡 보통,0.112,0.957,0.097,0.89,0.025,PASS,PASS,—,✅ PASS
+gen10__Nmethyl_morpholine,CN1CCC(COC23CC4CC(CC(O)(C4)C2)C3)CO1,0.859,1.97,5.53,🟠 어려움,0.136,0.916,0.061,0.891,0.082,PASS,WARN,—,❌ FAIL
+gen10__isoquinoline,OC12CC3CC(C1)CC(OCc1nccc4ccccc14)(C3)C2,0.937,3.835,4.59,🟡 보통,0.412,0.902,0.466,0.856,0.068,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전) | DILI=0.47≥0.4 (약물유발 간손상 — 낮을수록 안전),❌ FAIL
+gen10__Nmethyl_pip_4phenyl,CN1CCC(COC23CC4CC(CC(O)(C4)C2)C3)CC1c1ccccc1,0.88,4.17,5.01,🟠 어려움,0.804,0.952,0.042,0.731,0.025,FAIL,PASS,hERG=0.80≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL

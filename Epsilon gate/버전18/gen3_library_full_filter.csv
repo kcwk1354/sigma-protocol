@@ -1,0 +1,8 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+ether_ethyl__cyano_pyridyl_4,N#Cc1cc(CCOC23CCC4(O)CC(CC(C4)C2)C3)ccn1,0.928,2.986,4.91,🟡 보통,0.411,0.881,0.356,0.805,0.046,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_ethyl__methyl_pyridyl_4,Cc1cc(CCOC23CCC4(O)CC(CC(C4)C2)C3)ccn1,0.926,3.423,4.8,🟡 보통,0.581,0.953,0.122,0.781,0.05,FAIL,PASS,hERG=0.58≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_ethyl__pyridyl_4,OC12CCC3(OCCc4ccncc4)CC(CC(C1)C3)C2,0.925,3.115,4.7,🟡 보통,0.708,0.933,0.199,0.713,0.037,FAIL,PASS,hERG=0.71≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__bipyridyl,OC12CCC3(Oc4ccnc(-c5ccncc5)c4)CC(CC(C1)C3)C2,0.92,3.996,4.69,🟡 보통,0.8,0.842,0.434,0.771,0.094,FAIL,PASS,hERG=0.80≥0.4 (심장독성 — 낮을수록 안전) | DILI=0.43≥0.4 (약물유발 간손상 — 낮을수록 안전),❌ FAIL
+ether_ethyl__fluorophenyl,OC12CCC3(OCCc4ccc(F)cc4)CC(CC(C1)C3)C2,0.915,3.859,4.53,🟡 보통,0.592,0.965,0.131,0.701,0.046,FAIL,PASS,hERG=0.59≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__cyano_pyridyl_4,N#Cc1cc(OC23CCC4(O)CC(CC(C4)C2)C3)ccn1,0.907,2.806,4.97,🟡 보통,0.317,0.828,0.411,0.817,0.042,FAIL,PASS,DILI=0.41≥0.4 (약물유발 간손상 — 낮을수록 안전),❌ FAIL
+ether_direct__methyl_pyridyl_4,Cc1cc(OC23CCC4(O)CC(CC(C4)C2)C3)ccn1,0.899,3.243,4.85,🟡 보통,0.436,0.93,0.126,0.802,0.038,FAIL,PASS,hERG=0.44≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL

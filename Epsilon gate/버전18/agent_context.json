@@ -1,0 +1,88 @@
+{
+  "target": "AChE (알츠하이머, PDB: 1EVE)",
+  "scaffold": "아다만탄-OH",
+  "gate": {
+    "hERG": "<0.4 (심장독성)",
+    "DILI": "<0.4 (간손상)",
+    "BBB": ">0.5 (뇌혈관장벽)",
+    "docking_dG": "< -4.0 kcal/mol",
+    "RMSD": "< 2.5Å",
+    "SA_Score": "< 5.5"
+  },
+  "lessons": [
+    "Gen1: chlorophenyl LogP 초과 → F(fluorine)만 허용",
+    "Gen2: ether_ethyl 링커 최적 / pyridyl_4 꼬리 안정",
+    "Gen3: bipyridyl 도킹↑ 안정↑ but hERG=0.80 탈락",
+    "Gen4: cyano+F 조합 → hERG=0.39 해결, ΔG=-4.925",
+    "Gen5: F 두 개 → hERG↓ but 도킹도↓ (트레이드오프)",
+    "Gen6: 4-CN+2-F 위치 → RMSD=2.26Å 최고 안정",
+    "Gen7: 도네페질 파이페리딘 모티프 이식 → hERG=0.20, DILI=0.02",
+    "Gen8: N-메틸파이페리딘 하이브리드 → 세 지표 균형",
+    "Gen9: difluoro_pip 고리 F → hERG=0.28 but RMSD 악화"
+  ],
+  "best_candidates": [
+    {
+      "id": "gen4_cyano_F",
+      "dG": -4.925,
+      "RMSD": 2.66,
+      "hERG": 0.39,
+      "DILI": 0.3,
+      "SMILES": "OC12CC3(Oc4ccc(C#N)cc4F)CC(C1)CC(C2)C3"
+    },
+    {
+      "id": "gen6_4cn_2f",
+      "dG": -3.849,
+      "RMSD": 2.26,
+      "hERG": 0.4,
+      "DILI": 0.29,
+      "SMILES": "OC12CC3(Oc4ccc(C#N)cc4F)CC(C1)CC(C2)C3"
+    },
+    {
+      "id": "gen7_adamantyl",
+      "dG": -4.467,
+      "RMSD": 3.48,
+      "hERG": 0.2,
+      "DILI": 0.02,
+      "SMILES": "OC12CC3(OCC4CCNCC4)CC(C1)CC(C2)C3"
+    },
+    {
+      "id": "gen8_Nmethyl",
+      "dG": -4.429,
+      "RMSD": 2.95,
+      "hERG": 0.29,
+      "DILI": 0.015,
+      "SMILES": "OC12CC3(OCC4CCN(C)CC4)CC(C1)CC(C2)C3"
+    },
+    {
+      "id": "gen7_dimethoxy_F",
+      "dG": -4.697,
+      "RMSD": 3.03,
+      "hERG": 0.36,
+      "DILI": 0.31,
+      "SMILES": "OC12CC3(OCc4cc(OC)c(OC)c(F)c4)CC(C1)CC(C2)C3"
+    }
+  ],
+  "tradeoffs": {
+    "docking_vs_RMSD": "도킹 강한 분자가 MD 불안정 경향",
+    "hERG_vs_docking": "극성↑(CN/F 추가)하면 hERG↓ but 도킹도↓",
+    "piperidine_effect": "파이페리딘 모티프 → hERG/DILI 최저 but RMSD 악화",
+    "unsolved": "세 지표(dG<-4.5, RMSD<2.5, hERG<0.4) 동시 달성 분자 없음"
+  },
+  "approved_drugs": {
+    "donepezil": {
+      "SA": 2.52,
+      "LogP": 4.01,
+      "SMILES": "COc1cc2c(cc1OC)CC(CC2)CC(=O)Cc1ccccc1"
+    },
+    "rivastigmine": {
+      "SA": 2.67,
+      "LogP": 2.76,
+      "SMILES": "CCN(C)C(=O)Oc1cccc(c1)C(C)N(C)C"
+    },
+    "galantamine": {
+      "SA": 4.62,
+      "LogP": 1.53,
+      "SMILES": "COc1ccc2c(c1)CC1CC(O)C=CC3(CC(=O)N3)C12"
+    }
+  }
+}

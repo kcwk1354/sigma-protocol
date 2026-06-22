@@ -1,0 +1,81 @@
+{
+  "pdb_id": "4EY7",
+  "smiles": "C1CCN(C1)c1nc2ccccc2n1CC(=O)O",
+  "grid_center": [
+    -1.582,
+    -50.192,
+    2.101
+  ],
+  "grid_size": [
+    22.0,
+    22.0,
+    22.0
+  ],
+  "best_affinity_kcal_mol": -6.154,
+  "best_ki_uM": 30.6445,
+  "all_modes": [
+    {
+      "mode": 1,
+      "affinity_kcal_mol": -6.154,
+      "rmsd_lb": 0.0,
+      "rmsd_ub": 0.0,
+      "ki_uM": 30.6445
+    },
+    {
+      "mode": 2,
+      "affinity_kcal_mol": -5.598,
+      "rmsd_lb": 3.603,
+      "rmsd_ub": 5.579,
+      "ki_uM": 78.37
+    },
+    {
+      "mode": 3,
+      "affinity_kcal_mol": -5.5,
+      "rmsd_lb": 7.329,
+      "rmsd_ub": 9.339,
+      "ki_uM": 92.4758
+    },
+    {
+      "mode": 4,
+      "affinity_kcal_mol": -5.402,
+      "rmsd_lb": 2.498,
+      "rmsd_ub": 5.424,
+      "ki_uM": 109.1204
+    },
+    {
+      "mode": 5,
+      "affinity_kcal_mol": -5.38,
+      "rmsd_lb": 2.415,
+      "rmsd_ub": 4.215,
+      "ki_uM": 113.251
+    },
+    {
+      "mode": 6,
+      "affinity_kcal_mol": -5.369,
+      "rmsd_lb": 1.732,
+      "rmsd_ub": 4.801,
+      "ki_uM": 115.3745
+    },
+    {
+      "mode": 7,
+      "affinity_kcal_mol": -5.363,
+      "rmsd_lb": 2.564,
+      "rmsd_ub": 3.482,
+      "ki_uM": 116.5496
+    },
+    {
+      "mode": 8,
+      "affinity_kcal_mol": -5.356,
+      "rmsd_lb": 2.551,
+      "rmsd_ub": 3.967,
+      "ki_uM": 117.9356
+    },
+    {
+      "mode": 9,
+      "affinity_kcal_mol": -5.186,
+      "rmsd_lb": 2.873,
+      "rmsd_ub": 5.562,
+      "ki_uM": 157.1561
+    }
+  ]
+}

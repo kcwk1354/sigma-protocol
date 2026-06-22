@@ -1,0 +1,10 @@
+ID,SMILES,STATUS,REASONS,전략,MW,LogP,TPSA,HBD,HBA,QED,RotB,Lipinski_violations
+gen7__ref_gen6_4cn2f,N#Cc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)c(F)c1,PASS,—,ref,287.33,3.16,53.25,1,3,0.909,2,0
+gen7__adamantyl_piperidine,OC12CC3CC(C1)CC(OCC1CCNCC1)(C3)C2,PASS,—,adamantyl,265.4,2.086,41.49,2,3,0.821,3,0
+gen7__adamantyl_N_piperidine,OC12CC3CC(C1)CC(N1CCCCC1)(C3)C2,FAIL,QED=0.76<0.8,adamantyl,235.37,2.556,23.47,1,2,0.755,1,0
+gen7__piperidine_cyano,N#Cc1ccc(CN2CCC(COC34CC5CC(CC(O)(C5)C3)C4)CC2)cc1,PASS,—,piperidine,380.53,3.871,56.49,1,4,0.842,5,0
+gen7__dimethoxybenzyl,COc1ccc(COC23CC4CC(CC(O)(C4)C2)C3)cc1OC,PASS,—,dimethoxybenzyl,318.41,3.304,47.92,1,4,0.905,5,0
+gen7__dimethoxybenzyl_F,COc1cc(COC23CC4CC(CC(O)(C4)C2)C3)cc(F)c1OC,PASS,—,dimethoxybenzyl,336.4,3.443,47.92,1,4,0.895,5,0
+gen7__methoxyphenyl_simple,COc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)cc1,PASS,—,methoxyphenyl,274.36,3.158,38.69,1,3,0.92,3,0
+gen7__methoxyphenyl_F,COc1ccc(OC23CC4CC(CC(O)(C4)C2)C3)cc1F,PASS,—,methoxyphenyl,292.35,3.297,38.69,1,3,0.929,3,0
+gen7__galantamine_motif,COc1cc(OC23CC4CC(CC(O)(C4)C2)C3)ccc1O,PASS,—,galantamine,290.36,2.863,58.92,2,4,0.898,3,0

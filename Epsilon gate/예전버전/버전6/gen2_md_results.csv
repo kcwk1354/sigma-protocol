@@ -1,0 +1,4 @@
+ID,Docking_dG,RMSD_mean,RMSD_max,RMSD_final,Stable,Grade,MD_ps
+ether_ethyl__pyrimidyl,-3.844,3.771,4.548,4.548,False,△   불안정,10.0
+ether_ethyl__fluorophenyl,-3.758,3.376,3.935,3.935,False,⭐   보통,10.0
+ether_ethyl__pyridyl_4,-3.547,2.965,3.49,2.62,True,⭐   보통,10.0

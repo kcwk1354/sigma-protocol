@@ -1,0 +1,5 @@
+ID,Docking_dG,RMSD_mean,hERG,DILI,Grade
+gen7__adamantyl_piperidine,-4.467,3.476,0.196,0.022,⭐
+gen7__dimethoxybenzyl_F,-4.697,2.906,0.362,0.314,⭐
+gen7__methoxyphenyl_simple,-4.4,4.068,0.383,0.294,△
+gen7__galantamine_motif,-4.247,3.06,0.399,0.239,⭐

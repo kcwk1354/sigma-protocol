@@ -1,0 +1,12 @@
+receptor = C:\sigma_protocol\cancer_gate\docking\7E9H\receptor_R.pdbqt
+ligand   = C:\sigma_protocol\cancer_gate\docking\7E9H\ligand_CG11-004.pdbqt
+center_x = 207.213
+center_y = 186.578
+center_z = 202.506
+size_x = 30.0
+size_y = 30.0
+size_z = 30.0
+out = C:\sigma_protocol\cancer_gate\docking\7E9H\out_CG11-004.pdbqt
+exhaustiveness = 48
+num_modes = 9
+energy_range = 3

@@ -1,0 +1,4 @@
+ID,Docking_dG,RMSD_mean,hERG,DILI,Grade
+gen10__ref_gen8_Nmethyl,-4.443,3.471,0.294,0.015,⭐
+gen10__pyrrolidine,-4.293,3.44,0.27,0.016,⭐
+gen10__morpholine,-4.405,4.119,0.112,0.097,△

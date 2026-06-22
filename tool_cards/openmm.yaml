@@ -1,0 +1,23 @@
+tool: OpenMM
+version_tested: "8.x"
+role: MD 시뮬레이션, RMSD 안정성 검증
+speed_tier: SLOW
+environment:
+  python: "3.x"
+  cuda: "선택 (없으면 CPU)"
+install:
+  primary: "conda install -c conda-forge openmm"
+speed_setting:
+  fast_mode:
+    steps: 500
+    expected: "2~5분/분자"
+  full_mode:
+    steps: 5000
+    expected: "20~40분/분자"
+known_issues:
+  - "CPU 모드 steps 최소화 필수"
+last_verified: "2026-06-19"
+last_run_result: "OK"
+last_run_error: null
+run_count: 2
+used_in: [Epsilon-Gate, Cancer-Gate]

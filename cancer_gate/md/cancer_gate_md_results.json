@@ -1,0 +1,26 @@
+[
+  {
+    "compound_id": "CG10-005",
+    "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CCC1",
+    "ki_uM": 0.345,
+    "dili": 0.349,
+    "herg": 0.259,
+    "note": "Ki최고, hERG 경계",
+    "rmsd_fast_A": 0.1541239596031357,
+    "fast_pass": true,
+    "rmsd_full_A": 1.7326724799932929,
+    "stable": true
+  },
+  {
+    "compound_id": "CG12-004",
+    "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CC(O)C1",
+    "ki_uM": 0.58,
+    "dili": 0.312,
+    "herg": 0.154,
+    "note": "hERG최우수, DILI OK",
+    "rmsd_fast_A": 0.20215553144535053,
+    "fast_pass": true,
+    "rmsd_full_A": 0.14496673700910062,
+    "stable": true
+  }
+]

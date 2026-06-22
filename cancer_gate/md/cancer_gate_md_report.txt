@@ -1,0 +1,19 @@
+Cancer-Gate MD 최종 판정
+==================================================
+
+방법: OpenFF Sage 2.2.0 / 진공 / Kabsch-aligned 중원자 RMSD
+
+CG10-005
+  Ki=0.345uM  DILI=0.349  hERG=0.259
+  FAST=0.15A  FULL=1.73A
+  안정성: STABLE
+
+CG12-004
+  Ki=0.58uM  DILI=0.312  hERG=0.154
+  FAST=0.20A  FULL=0.14A
+  안정성: STABLE
+
+★ 최종 선택: CG12-004
+  근거: RMSD 더 낮음
+  hERG최우수, DILI OK
+  Ki=0.58uM

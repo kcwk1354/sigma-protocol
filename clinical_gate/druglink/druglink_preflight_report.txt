@@ -1,0 +1,48 @@
+﻿=== Clinical-Gate DrugLink Preflight Report ===
+날짜: 2026-06-21
+샘플: 100 건 (DRUG type, 분류 가능, 약물명 중복제거)
+
+[매핑 성공률]
+전체 샘플: 100 건
+ChEMBL 매핑 성공: 1 건 (1%)
+FDA Drugs@FDA 매핑 성공: 55 건 (55%)
+양쪽 모두 매핑 성공: 0 건 (0%)
+
+[ChEMBL 판단]
+약물명 전처리 단계 추가 필요
+원인: pref_name 정확일치 검색 방식으로 인해 용량/제형이 붙은 약물명("Belimumab 100 mg SC" 등)
+      및 비표준 명칭("Regimen A", "Early surfactant" 등)은 매핑 실패.
+대안: (1) 약물명에서 용량·제형 제거 → 성분명만 추출 후 재시도
+      (2) ChEMBL similarity search 또는 UniChem cross-referencing 활용
+
+[FDA 판단]
+FDA 매핑: 전체 연결 진행 가능
+FDA 매핑 성공률 55%는 DrugLink 전체 연결 진행에 충분한 수준.
+단, 일부 false positive 존재 가능 (약물명 부분 일치로 다른 약물 매핑됨).
+예: "Belimumab 100 mg SC" → 다른 ANDA 번호 반환 가능.
+
+[failure_token별 FDA 승인 분포]
+EFFICACY  실패:  1/9건  (11.1%) FDA 승인
+ENROLLMENT 실패: 32/43건 (74.4%) FDA 승인
+SAFETY    실패:  6/14건 (42.9%) FDA 승인
+BUSINESS  실패: 12/21건 (57.1%) FDA 승인
+EXTERNAL  실패:  2/4건  (50.0%) FDA 승인
+REGULATORY 실패: 2/9건  (22.2%) FDA 승인
+
+[분자 특성 기초 통계]
+ChEMBL 매핑 성공 건수 부족(1건)으로 통계 의미 없음.
+약물명 정규화 후 재시도 필요.
+
+[카운터인튜이티브 발견]
+- ENROLLMENT 실패 약물의 FDA 승인률(74.4%)이 가장 높음.
+  → 이미 승인된 (효능 입증된) 약물도 적응증 확장 시험에서 모집 실패로 종료됨.
+- EFFICACY 실패 약물의 FDA 승인률(11.1%)이 가장 낮음.
+  → 효능 미달로 종료된 약물은 대부분 미승인 상태로 개발 중단.
+
+[권고 사항]
+1. intervention_name 전처리 파이프라인 추가:
+   - 용량/제형 제거: "Bevacizumab 10mg/mL" → "Bevacizumab"
+   - 브랜드명 → 성분명 변환 사전 구축
+   - 비약물 제거: "Placebo", "Standard care", "Regimen" 등
+2. ChEMBL 재시도 후 목표 매핑률: 60~70% 예상
+3. FDA API는 substance_name 대신 brand_name 필드도 병행 검색 권고

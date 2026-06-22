@@ -1,0 +1,44 @@
+﻿=== Clinical-Gate Gen2 Quality Report ===
+날짜: 2026-06-21
+전체 레코드: 100 건
+
+[failure_token 분포]
+  ENROLLMENT  : 28건 (28%)
+  UNKNOWN     : 21건 (21%)
+  EXTERNAL    : 17건 (17%)
+  BUSINESS    : 16건 (16%)
+  REGULATORY  : 8건 (8%)
+  SAFETY      : 6건 (6%)
+  EFFICACY    : 4건 (4%)
+
+[핵심 지표]
+UNKNOWN 비율       : 21% (21 건)
+Gen1 대비 감소     : -20 건 (41건 → 21 건)
+endpoint_miss      : 4% (4 건)
+confidence 평균    : 0.491
+
+=== 판단 ===
+Gen2 성공. 전체 데이터셋 처리 준비 완료.
+
+=== UNKNOWN 잔존 원문 (21 건) ===
+  NCT00456846 | (공백/null)
+  NCT01080222 | Study discontinued
+  NCT00307645 | (공백/null)
+  NCT01997203 | complete patients samples required
+  NCT02276456 | (공백/null)
+  NCT00302939 | (공백/null)
+  NCT01153646 | (공백/null)
+  NCT04713995 | Sufficient samples and data have been collected for data analyses.
+  NCT02470052 | (공백/null)
+  NCT04565249 | Study halted and will not resume; participants are no longer being examined or receiving intervention
+  NCT04865848 | research operation issues
+  NCT00176735 | (공백/null)
+  NCT01975350 | (공백/null)
+  NCT06114303 | This study was terminated early on 16/06/2025 because the initial results obtained from the 14 pairs of patients included were sufficient to satisfactorily address the research question posed in the context of the thesis.
+  NCT00038805 | (공백/null)
+  NCT01189422 | (공백/null)
+  NCT02829372 | Study halted prematurely and will not resume; participants are no longer being examined or receiving intervention
+  NCT01089777 | (공백/null)
+  NCT02072057 | Poor recruiting
+  NCT05324501 | Strategic decision
+  NCT02146846 | (공백/null)

@@ -1,0 +1,6 @@
+formula,S_replaced,conductivity_mS_cm,status,desc
+Li6PS5Cl (베이스),0,6.5609,✅ PASS,Li6PS5Cl 베이스 (Cl 0개 추가)
+Li6PS4ClBr,0,6.9806,✅ PASS,Li6PS5Cl + Br 혼합 (Cl/Br 비교)
+Li6PS4Cl2,1,16.2878,🏆 TOP,"Li6PS4Cl2 (S→Cl 1개, Gen5 최고)"
+Li6PS3Cl3,2,4.9604,✅ PASS,"Li6PS3Cl3 (S→Cl 2개, 과잉 탐색)"
+Li6PS2Cl4,3,10.6818,🏆 TOP,"Li6PS2Cl4 (S→Cl 3개, 임계점)"

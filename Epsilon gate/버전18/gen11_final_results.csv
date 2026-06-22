@@ -1,0 +1,6 @@
+ID,Docking_dG,RMSD_mean,hERG,DILI,Grade
+gen11__ref_gen8_Nmethyl,-4.469,3.369,0.294,0.015,⭐
+gen11__ref_gen10_morpholine,-4.271,3.188,0.112,0.097,⭐
+gen11__direct_O_morpholine,-4.226,4.729,0.084,0.137,△
+gen11__direct_O_Nmethylpip,-4.101,3.45,0.239,0.023,⭐
+gen11__direct_O_pyrrolidine,-4.071,2.278,0.14,0.025,⭐⭐

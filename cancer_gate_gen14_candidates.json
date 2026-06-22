@@ -1,0 +1,47 @@
+[
+  {
+    "id": "CG14-001",
+    "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)CC(O)C1",
+    "name": "3-monoF+4-OH pip",
+    "rationale": "Gen13 DILI원인=pip F과잉 가설검증: 3,3-diF→3-monoF + 4-OH유지",
+    "scaffold": "CF2-cyclopropane",
+    "adc_handle": "COOH",
+    "exhaustiveness": 48,
+    "rdkit_preview": {
+      "mw": 379.33,
+      "logp": 2.346,
+      "hbd": 2,
+      "hba": 3
+    }
+  },
+  {
+    "id": "CG14-002",
+    "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)[C@@H](F)C1CN1C(C)C(F)(F)CC(O)C1",
+    "name": "CHF-cyclopropane+4-OH pip",
+    "rationale": "CF2→CHF(사이클로프로판 F1개제거) + 4-OH유지: 두 축 동시 완화",
+    "scaffold": "CHF-cyclopropane",
+    "adc_handle": "COOH",
+    "exhaustiveness": 48,
+    "rdkit_preview": {
+      "mw": 379.33,
+      "logp": 2.346,
+      "hbd": 2,
+      "hba": 3
+    }
+  },
+  {
+    "id": "CG14-003",
+    "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)[C@@H](F)C1CN1C(C)C(F)(F)CCC1",
+    "name": "CHF-cyclopropane only",
+    "rationale": "CF2→CHF 대조군: OH없이 F감소 효과만 분리",
+    "scaffold": "CHF-cyclopropane",
+    "adc_handle": "COOH",
+    "exhaustiveness": 48,
+    "rdkit_preview": {
+      "mw": 363.33,
+      "logp": 3.375,
+      "hbd": 1,
+      "hba": 2
+    }
+  }
+]

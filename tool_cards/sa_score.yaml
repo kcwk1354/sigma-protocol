@@ -1,0 +1,17 @@
+tool: SA Score
+version_tested: "RDKit 내장"
+role: 합성 가능성 점수 (1=쉬움~10=어려움)
+speed_tier: FAST
+environment:
+  python: "RDKit과 동일"
+  conflicts: []
+filter_threshold:
+  pass: "< 4.0"
+  fail: "> 6.0"
+known_issues:
+  - "합성 가능성 과소평가 경향 — 단독 탈락 판단 주의"
+last_verified: "2026-06-19"
+last_run_result: "OK"
+last_run_error: null
+run_count: 2
+used_in: [Epsilon-Gate, Cancer-Gate]

@@ -1,0 +1,6 @@
+material_id,formula,D_cm2s,conductivity_mS_cm,status,temperature_K,md_steps
+mp-696128,Li3PS4,9.555e-08,7.2535,✅ PASS,500,200
+mp-985583,Li3PS4,2.308e-09,0.1593,⚠️ LOW,500,200
+mp-985591,Li6PS5Cl,7.296e-10,0.0594,❌ FAIL,500,200
+mp-1153395,Li7PS6,ERROR,0,ERROR: 'NoneType' object has no attribute 'formula',500,200
+mp-1040163,Li6PS5Br,ERROR,0,ERROR: 'NoneType' object has no attribute 'formula',500,200

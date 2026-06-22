@@ -1,0 +1,16 @@
+tool: RDKit
+version_tested: "2024.09.1"
+role: SMILES 유효성, LogP/QED 계산, 포맷 변환
+speed_tier: FAST
+environment:
+  python: ">=3.8"
+  conflicts: []
+install:
+  primary: "conda install -c conda-forge rdkit"
+known_issues:
+  - "pip 설치 후 conda 환경에서 인식 못할 수 있음 → conda 우선"
+last_verified: "2026-06-19"
+last_run_result: "OK"
+last_run_error: null
+run_count: 2
+used_in: [Epsilon-Gate, Cancer-Gate]

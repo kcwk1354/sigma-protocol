@@ -1,0 +1,10 @@
+ID,SMILES,QED,LogP,SA_Score,SA_Grade,hERG,BBB,DILI,Bioavail,AMES,Tox_Status,SA_Status,Tox_Reasons,FINAL
+ether_direct__cyano_fluorophenyl_4cn2f,N#Cc1cc(F)cc(OC23CCC4(O)CC(CC(C4)C2)C3)c1,0.909,3.55,4.87,🟡 보통,0.388,0.854,0.299,0.746,0.046,PASS,PASS,—,✅ PASS
+ether_direct__indanyl,OC12CCC3(OC4CCc5ccccc54)CC(CC(C1)C3)C2,0.888,4.164,4.97,🟡 보통,0.504,0.956,0.121,0.709,0.055,FAIL,PASS,hERG=0.50≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__cf_ortho,N#Cc1ccccc1OC12CCC3(O)CC(CC(C3)C1)C2,0.905,3.411,4.72,🟡 보통,0.407,0.897,0.221,0.737,0.041,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__fcn_para,N#Cc1ccc(F)cc1OC12CCC3(O)CC(CC(C3)C1)C2,0.909,3.55,4.81,🟡 보통,0.424,0.895,0.258,0.725,0.05,FAIL,PASS,hERG=0.42≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_direct__difluoro_cn,N#Cc1cc(F)c(OC23CCC4(O)CC(CC(C4)C2)C3)c(F)c1,0.904,3.689,4.97,🟡 보통,0.367,0.835,0.336,0.737,0.054,PASS,PASS,—,✅ PASS
+ether_methyl__cyano_fluorophenyl_4cn2f,N#Cc1cc(F)cc(COC23CCC4(O)CC(CC(C4)C2)C3)c1,0.925,3.688,4.82,🟡 보통,0.416,0.881,0.281,0.764,0.06,FAIL,PASS,hERG=0.42≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_methyl__cf_ortho,N#Cc1ccccc1COC12CCC3(O)CC(CC(C3)C1)C2,0.928,3.549,4.69,🟡 보통,0.409,0.915,0.215,0.767,0.044,FAIL,PASS,hERG=0.41≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_methyl__fcn_para,N#Cc1ccc(F)cc1COC12CCC3(O)CC(CC(C3)C1)C2,0.925,3.688,4.8,🟡 보통,0.436,0.909,0.246,0.754,0.062,FAIL,PASS,hERG=0.44≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL
+ether_methyl__difluoro_cn,N#Cc1cc(F)c(COC23CCC4(O)CC(CC(C4)C2)C3)c(F)c1,0.915,3.827,4.95,🟡 보통,0.417,0.882,0.337,0.761,0.065,FAIL,PASS,hERG=0.42≥0.4 (심장독성 — 낮을수록 안전),❌ FAIL

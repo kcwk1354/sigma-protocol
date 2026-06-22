@@ -1,0 +1,4 @@
+ID,Docking_dG,RMSD_mean,hERG,DILI,Grade
+gen9__ref_Nmethyl_pip,-4.482,3.565,0.294,0.015,△
+gen9__difluoro_pip_core,-4.43,3.356,0.282,0.028,⭐
+gen9__pip_core_only,-4.449,4.708,0.294,0.015,△

@@ -1,0 +1,11 @@
+receptor = C:\sigma_protocol\cancer_gate\selectivity\receptor_5CGC.pdbqt
+ligand   = C:\sigma_protocol\cancer_gate\docking\7E9H\ligand_CG10-005.pdbqt
+center_x = -23.938
+center_y = 16.228
+center_z = 43.562
+size_x = 25.0
+size_y = 25.0
+size_z = 25.0
+exhaustiveness = 32
+num_modes = 9
+energy_range = 3

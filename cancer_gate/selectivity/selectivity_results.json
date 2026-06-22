@@ -1,0 +1,29 @@
+[
+  {
+    "id": "CG10-005",
+    "dG_mGluR5": -6.827,
+    "Ki_mGluR5_uM": 9.810134297782772,
+    "dG_mGluR4": -8.811,
+    "Ki_mGluR4_uM": 0.345,
+    "selectivity_index": 28.435171877631227,
+    "status": "OK"
+  },
+  {
+    "id": "CG12-004",
+    "dG_mGluR5": -6.749,
+    "Ki_mGluR5_uM": 11.191703223021225,
+    "dG_mGluR4": -7.948,
+    "Ki_mGluR4_uM": 0.58,
+    "selectivity_index": 19.296040039691768,
+    "status": "OK"
+  },
+  {
+    "id": "CG14-001",
+    "dG_mGluR5": -6.476,
+    "Ki_mGluR5_uM": 17.748861424671034,
+    "dG_mGluR4": -7.393,
+    "Ki_mGluR4_uM": 0.982,
+    "selectivity_index": 18.074196970133436,
+    "status": "OK"
+  }
+]

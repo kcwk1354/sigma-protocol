@@ -1,0 +1,34 @@
+{
+  "candidate": "CG10-005",
+  "smiles": "OC(=O)C1(c2ccc(F)c(F)c2)C(F)(F)C1CN1C(C)C(F)(F)CCC1",
+  "vina_dG_best": -8.811,
+  "vina_Ki_uM_best": 0.345,
+  "forcefield_note": "OpenFF Sage 2.2.0 (SMIRNOFF), Gasteiger charges, vacuum, 300K",
+  "md_fast": {
+    "steps": 500,
+    "rmsd_all_nm": 0.0648,
+    "rmsd_all_angstrom": 0.6484,
+    "rmsd_heavy_nm": 0.0583,
+    "rmsd_heavy_angstrom": 0.5826,
+    "rmsd_nm": 0.0583,
+    "rmsd_angstrom": 0.5826,
+    "potential_energy_kJ_mol": 221.31,
+    "md_pass": true,
+    "status": "OK",
+    "forcefield": "OpenFF Sage 2.2.0 + Langevin 300K (Kabsch-aligned)"
+  },
+  "md_full": {
+    "steps": 5000,
+    "rmsd_all_nm": 0.2026,
+    "rmsd_all_angstrom": 2.0255,
+    "rmsd_heavy_nm": 0.1689,
+    "rmsd_heavy_angstrom": 1.6887,
+    "rmsd_nm": 0.1689,
+    "rmsd_angstrom": 1.6887,
+    "potential_energy_kJ_mol": 223.01,
+    "md_pass": true,
+    "status": "OK",
+    "forcefield": "OpenFF Sage 2.2.0 + Langevin 300K (Kabsch-aligned)"
+  },
+  "final_md_pass": true
+}

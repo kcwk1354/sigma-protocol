@@ -1,0 +1,41 @@
+﻿=== Clinical-Gate Batch 006 Report ===
+날짜: 2026-06-21
+fetch 건수: 1000
+
+[이번 배치 - failure_token 분포]
+  UNKNOWN     : 332건 (33.2%)
+  ENROLLMENT  : 309건 (30.9%)
+  BUSINESS    : 145건 (14.5%)
+  EXTERNAL    : 81건 (8.1%)
+  SAFETY      : 57건 (5.7%)
+  EFFICACY    : 44건 (4.4%)
+  REGULATORY  : 32건 (3.2%)
+
+[핵심 지표]
+UNKNOWN 비율    : 33.2% (332 건)
+endpoint_miss   : 3.2% (32 건)
+confidence 평균 : 0.446
+
+[UNKNOWN 잔존 원문 샘플 10건]
+  NCT01651767 | Because of many competing trials using the same mechanism of action, but being further advanced in development
+  NCT00973193 | The intermediate analyses did not allowed to continue the clinical study.
+  NCT01279616 | PI moving to a different institution.
+  NCT02072616 | Analysis not possible at the stage
+  NCT02389231 | target number of inclusion not reached
+  NCT01962337 | We have discontinued development of FPA008 in RA
+  NCT01606709 | Difficult to recruit patients
+  NCT04899232 | There are fewer potential patients and an early conclusion of the study would be beneficial in an attempt to finish in a reasonable time and keep the cohorts homogenous.
+  NCT05542914 | The study was terminated by NIH on March 21, 2025 due to new guidelines.
+  NCT00107471 | The unpromising experience of the French group with topotecan given at a dosage of 0.4 mg/m2/day over 30 mins w/in 1 hr of radiation (Cancer 2005; 104: 2792).
+
+[누적 현황 (Batch 001~006 = 6000건)]
+  UNKNOWN     : 2126건 (35.4%)
+  ENROLLMENT  : 1774건 (29.6%)
+  BUSINESS    : 847건 (14.1%)
+  EXTERNAL    : 533건 (8.9%)
+  SAFETY      : 304건 (5.1%)
+  EFFICACY    : 234건 (3.9%)
+  REGULATORY  : 182건 (3%)
+→ 누적 UNKNOWN: 35.4% (2126 건)
+
+nextPageToken: ZVNj7o2Elu8o3lp0VoC5tarumpOQJJxoZfml3_AW

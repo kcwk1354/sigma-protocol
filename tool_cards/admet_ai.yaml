@@ -1,0 +1,18 @@
+tool: ADMET-AI
+version_tested: "1.2.0"
+role: hERG/DILI/AMES/HIA ADMET 필터
+speed_tier: MEDIUM
+environment:
+  python: "3.10"
+  conflicts:
+    - "pandas>=2.2 (RDKit PandasTools 충돌) → pandas<2.2 유지"
+install:
+  primary: "pip install admet-ai"
+  note: "첫 실행 시 모델 로딩 ~10초"
+known_issues:
+  - "pandas 버전 엄격 관리 필요"
+last_verified: "2026-06-19"
+last_run_result: "OK"
+last_run_error: null
+run_count: 2
+used_in: [Epsilon-Gate, Cancer-Gate]
