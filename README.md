@@ -165,8 +165,6 @@ This dual function was not designed; it emerged from the data.
 SMILES: CN1CCCC1OC12CC3CC(CC(O)(C3)C1)C2
 ```
 
-**Preprint:** DOI [10.20944/preprints202501.1982.v1](https://doi.org/10.20944/preprints202501.1982.v1)
-
 ---
 
 ## Pipeline Architecture
